@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="icon" type="image/png" href="imgs/logo_small.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>SunEduTech</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img src="imgs/logo2.png" alt="company logo">
+        </div>
+        <div class="navbar__menu">
+            <li class="navbar__menu_item active" data-link="#home">Home</li>
+            <li class="navbar__menu_item"><a href="contact.html">Contact</a></li>
+        </div>
+        <!-- Toggle Button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="section">
+        <div class="home__container">
+            <div class="home__left_container">
+                <h1 class="home__title">Creating my<br><span>First <br> Mobile App</span></h1>
+                <br>
+                <button class="home__button" data-link="#home__sub">Start a Course</button>
+            </div>
+            <div class="home__right_container">
+                <img src="imgs/main4.png" alt="Home image" class="home__avatar"/>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Home Sub -->
+    <section id="home__sub" class="section">
+        <div class="home__sub_top">
+            <h1 class="home__sub_title">Welcome to 
+                <span style="color: darkgreen">Creating my First Flutter App Class</span>
+            </h1>
+        <h3 class="home__sub_description">
+            Do you want to create a mobile app for your teaching or do you want to create a variety of mobile apps for education? 
+            However, if you are having difficulty because you have never learned programming at all, 
+            this course will help you get started. This course consists of practicing basic knowledge of mobile app development, 
+            setting up a development environment, practicing simple Flutter programming, and finally, developing a simple couter app. 
+            This lesson will give you an overview of the process of developing a mobile app using Flutter.
+        </h3>
+        </div>
+        <div class="home__sub_bottom">
+            <h2 class="home__sub_subtitle">Learning Objectives</h2>
+            <h3>After successfully completing this course, you will be able to:</h3>
+        <ul>
+            <li class="home__sub_listitem">Gain a clear understanding of the overall process of mobile app development.</li>
+            <li class="home__sub_listitem">Know how to convert an idea into a design.</li>
+            <li class="home__sub_listitem">Know how to download and install a development tool kit, <a class="home__sub_a" href="https://developer.android.com/studio"><strong><em>Android Studio</em></strong></a>, and understand features of it.</li>
+            <li class="home__sub_listitem">Know a programmjing language, <a class="home__sub_a" href="https://flutter.dev/"><strong><em>Flutter</em></strong></a>, and practice to write basic code.</li>
+            <li class="home__sub_listitem">Create one single view app, Counter App, and run it with a simulator or actual device.</li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer" class="section">
+        <div class="footer__right_container">
+            <p class="footer__text">Learn now for your dream!</p>
+            <p class="footer__rights">© 2021 SunEduTech - All rights reserved</p>
+        </div>
+    </section>
+</body>
+</html>

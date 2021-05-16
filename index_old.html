@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunmi's Portfolio</title>
+    <meta name="description" content="Portfolio for world-recommend software engineer Sunmi"/>
+    <meta name="author" content="Sunmi"/>
+    <link rel="icon" type="image/png" href="imgs/myLogo.png">
+    <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fas fa-paw"></i>
+            <a href="#">Sunmi</a>
+        </div>
+        <div class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My Work</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </div>
+        <!-- Toggle Button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+    <!-- Home -->
+    <div class="section" id="home">
+        <div class="home__container">
+            <div class="section__container">
+                <img src="imgs/sunmi.png" alt="Sunmi's photo" class="home__avatar"
+            />
+            <h1 class="home__title">Hello,<br/> I'm Sunmi</h1>
+            <h2 class="home__description">A Creative and Passionate Mobile App Developer</h2>
+            <button class="home__contact" data-link="#contact">Contact Me</button>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="section__container">
+            <h1>About me</h1>
+        <p>
+            Experienced Mobile App Developer with a demonstrated history of working in the higher education industry.
+            Skilled in Mobile App Development, Android, iOS, a cross-platform (Flutter and Cocos2D-x), and Research.
+            Strong engineering professional with a Google Nanodegree Program focused in Android Basics from Udacity.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="major__title">Mobile</h2>
+                <div class="major__description">Swift, Flutter, Objective C, <br/> Java, Dart, Python, Cocos2D-x, Unity</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fab fa-html5"></i></div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">HTML, CSS, JavaScript, <br/> Pearl</div>
+            </div>
+            <div class="major">
+                <div class="major__icon"><i class="fas fa-server"></i></div>
+                <h2 class="major__title">Backend</h2>
+                <div class="major__description">Python, Java, JavaScript,<br/>  Verilog, VHDL</div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/stanford.png" alt="stanford gse" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">Currently working as a Mobile App Developer</p>
+                    <p class="job__period">2017 June - Until Now</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/enuma.png" alt="enuma gse" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">Mobile App Developer and Project Manager</p>
+                    <p class="job__period">2013 July - 2017 September</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/samsung.png" alt="samsung gse" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">Software Engineer</p>
+                    <p class="job__period">2003 February - 2008 June</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+    <!-- skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+        <h3>Skills & Attributes</h3>
+        <p>Experience with all phases of the software life-cycle. Passion for
+            learning new technologies. Capable of working within a team environment
+            and independently. Ability to plan and time schedule, work under strict
+            time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <H3 class="skillset__title">Skills</H3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Swift</span>
+                            <span>96%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 96%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Flutter</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Objective C</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Android Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 88%;"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <H3 class="skillset__title">Tools</H3>
+                    <ul class="tools__list">
+                        <li><span>Xcode (iOS development tool)</span></li>
+                        <li><span>Android Studio (Android development tool)</span></li>
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>Illustrator (design tool)</span></li>
+                        <li><span>Captivate (Instructional design tool)</span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <H3 class="skillset__title">Etc</H3>
+                    <ul class="etc__list">
+                        <li class="span">Firebase</li>
+                        <li class="span">Project Management</li>
+                        <li class="span">SPSS & R</li>
+                        <li class="span">EXCEL & WORD & Power Point</li>
+                        <li class="span">TESOL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section id="work" class="section">
+       <div class="section__container">
+        <H1>My work</H1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+            <button class="category__btn selected"  data-filter="*">All<span class="category__count">8</span></button>
+            <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">6</span></button>
+            <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">1</span></button>
+            <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">1</span></button>
+        </div>
+        <div class="work__projects">
+            <a class="project" href="https://github.com/Yolongcat96/" target="_blank" data-type="mobile">
+            <img
+                class="project__img"
+                src="imgs/projects/project1.PNG"
+                alt="STEP app" >
+            <div class="project__description">
+                <h3>STEP program of Stanford Graudate School of Education mobile app</h3>
+                <span>The first cross-platform app using Flutter and Firebase to support iOS and Android</span>
+            </div>
+            </a>
+            <a class="project"  href="https://github.com/Yolongcat96/" target="_blank" data-type="mobile">
+                <img class="project__img" src="imgs/projects/project2.PNG" alt="GSE Event app">
+                <div class="project__description">
+                    <h3>Graduate School of Education at Stanford Event app</h3>
+                    <span>Using Swift for organizing various events of GSE</span>
+                </div>
+                </a>
+                <a class="project"  href="https://github.com/Yolongcat96/" target="_blank" data-type="mobile">
+                    <img class="project__img" src="imgs/projects/project3.PNG" alt="Playfulscience app">
+                    <div class="project__description">
+                        <h3>PlayfulScience app</h3>
+                        <span>Using Swift and Firebase</span>
+                    </div>
+                    </a>
+                <a class="project" href="https://github.com/Yolongcat96/" target="_blank" data-type="mobile">
+                    <img src="imgs/projects/project4.PNG" alt="PreVent app" class="project__img">
+                    <div class="project__description">
+                        <h3>Medical App with Dr. Ness</h3>
+                        <br>The first medical app with Swift</br> It is available at App Store.</span>
+                    </div>
+                    </a>
+                    <a class="project"  href="https://github.com/Yolongcat96/" target="_blank" data-type="mobile">
+                        <img src="imgs/projects/project5.PNG" alt="AMES app" class="project__img">
+                        <div class="project__description">
+                            <h3>Researh supporting app Dr.Obradovic</h3>
+                            <br>It was developed to assess young students' various social skills and developed with Swift and Firebase</span>
+                        </div>
+                        </a>
+                        <a class="project"  href="https://github.com/Yolongcat96/" target="_blank" data-type="mobile">
+            <img src="imgs/projects/project6.PNG" alt="SEL app" class="project__img">
+            <div class="project__description">
+                <h3>Researh supporting app Dr.Obradovic</h3>
+                <br>It was developed to support teachers assess and save data and developed with Swift</span>
+            </div>
+            </a>
+            <a class="project" href="" data-type="front-end">
+                <img src="imgs/projects/project1.PNG" alt="SEL app" class="project__img">
+                <div class="project__description">
+                <h3>Researh supporting app Dr.Obradovic</h3>
+                <br>It was developed to support teachers assess and save data and developed with Swift</span>
+            </div>
+            </a>
+            <a class="project" href="" data-type="back-end">
+                <img src="imgs/projects/project2.PNG" alt="SEL app" class="project__img">
+                <div class="project__description">
+                <h3>Researh supporting app Dr.Obradovic</h3>
+                <br>It was developed to support teachers assess and save data and developed with Swift</span>
+            </div>
+            </a>
+        </div>
+       </div>
+
+    </section>
+    <!-- testimonial -->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Testimonial</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials"></div>
+        <div class="testimonial">
+            <img src="imgs/testimonials/person.png" alt="people" class="testimonial__avatar">
+            <div class="testimonial__speech-bubble">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos labore ipsa veniam non. Placeat non corporis aspernatur exercitationem deserunt nostrum animi voluptas eveniet, fugiat enim totam magnam ratione dolor.</p>
+                <p class="name"><a href="">Paul</a> /Stanford University</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos labore ipsa veniam non. Placeat non corporis aspernatur exercitationem deserunt nostrum animi voluptas eveniet, fugiat enim totam magnam ratione dolor.</p>
+                <p class="name"><a href="">Paul</a> /Stanford University</p>
+            </div>
+            <img src="imgs/testimonials/person.png" alt="people" class="testimonial__avatar">
+        </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <a class="contact__email" href="mailto:yolongcat@gmail.com"><h2>yolongcat@gmail.com</h2></a>
+        <div class="contact__links">
+            <a href="https://github.com/Yolongcat96/" title="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sunmi-seol-a27385112/" translate="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2021 Sunmi - All rights reserved</p>
+    </section>
+    <!-- arrow up -->
+    <button class="arrow-up" data-link="#home">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
