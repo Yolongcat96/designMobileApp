@@ -1,0 +1,50 @@
+/* Contact.html */
+#overview {
+  display: flex;
+  background-color: var(--color-white);
+  padding-top: 180px;
+  padding-bottom: 125px;
+  justify-content: center;
+}
+
+.overview_container {
+  width: 100%;
+}
+
+.overview_left_container {
+  width: 50%;
+  float: left;
+  padding-left: 100px;
+}
+
+.overview_right_container {
+  width: 40%;
+  float: left;
+  padding-left: 100px;
+}
+
+.overview_title {
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+
+.overview_subtitle {
+  color: var(--color-black);
+  text-align: left;
+  padding-left: 150px;
+}
+
+/* For below 768px screen width - for mobile version */
+@media screen and (max-width: 768px) {
+  .home__contact_container {
+    width: 100%;
+  }
+  .home__contact_right_container {
+    width: 100%;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 50px;
+  }
+}
