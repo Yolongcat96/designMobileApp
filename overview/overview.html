@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="icon" type="image/png" href="imgs/logo_small.png">
+    <link rel="icon" type="image/png" href="/imgs/logo_small.png">
     <link rel="stylesheet" href="/general_style.css">
-    <link rel="stylesheet" href="/style.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="/overview/style.css">
     <title>SunEduTech</title>
 </head>
 <body>
@@ -20,10 +18,10 @@
         </div>
         <div class="navbar__menu">
             <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
-            <li class="navbar__menu_item">Overview</li>
-            <li class="navbar__menu_item">Lessons</li>
+            <li class="navbar__menu_item" data-link="#overview">Overview</li>
+            <!-- <li class="navbar__menu_item">Lessons</li>
             <li class="navbar__menu_item">Assessment</li>
-            <li class="navbar__menu_item">Resources</li>
+            <li class="navbar__menu_item">Resources</li> -->
             <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
         </div>
         <!-- Toggle Button -->
@@ -33,8 +31,107 @@
 
     </nav>
 
+    <!-- overview -->
     <section id = "overview" class="section">
+        <div class="overview__container">
+            <h1 class="overview__title">Overview</h1>
+            <h2 class="overview__subtitle">About this course</h2>
+            <p class="overview__text">
+                The course, <strong style="color:var(--color-green)">Designing an Educational Mobile App</strong>,
+                is designed for those who want to make a mobile app, but have no experience in technology. 
+                It takes around 1 hour to complete this course, and you will be supposed to complete 
+                all the provided lessons. This course is composed of the following three lessons.<br>
+            </p>
+            <ul>
+                <li class="home__sub_listitem"><strong>Lesson 1</strong>: 
+                    What is a mobile app?</li>
+                <li class="home__sub_listitem"><strong>Lesson 2</strong>: 
+                    The overall process of developing a mobile app</li>
+                <li class="home__sub_listitem"><strong>Lesson 3</strong>: 
+                    Review the existing mobile app</li>
+            </ul>
+            <p class="overview__text">
+                Each lesson contains three steps.
+            </p>
+            <ul>
+                <li class="home__sub_listitem"><strong>Step 1</strong>: read the written instruction with images about the concepts.</li>
+                <li class="home__sub_listitem"><strong>Step 2</strong>: watch the related videos to reinforce what you have learned. Relevant resources are provided for further studies. </li>
+                <li class="home__sub_listitem"><strong>Step 3</strong>: take a quiz to check the degree of how you understand the provided instruction or 
+                    practice to review the existing mobile apps.</li>
+            </ul>
+                <img src="/imgs/overview.png" alt="overview" class="overview__main_img"/> <br> <br>
+        </div>
+    </section>
 
+    <section id="overview__bottom" class="section">
+        <h2 class="overview__subtitle">Design Project</h2>
+        <p class="overview__text">
+            After successfully completing all the lessons, you will be required to carry out a design project.
+            As an assessment, you will read the provided specification of a mobile app and design the intended mobile app during 20 minutes. 
+            You can use paper-pencil, popwer point, photoshop, or illustrator to draw the design. 
+            After completing the design, take a picture or scan of the paper version or save the design in the format of pdf and submit it. 
+            Feedback will be provided by an instructor. <br>
+            Grading criteria for the design project are as follows.
+        </p>
+        <table class="overview__table">
+            <tbody>
+                <tr>
+                    <th scope=“col” class=“overview__table_top”>Evaluation Criteria</th>
+                    <th scope=“col” class=“overview__table_top”>Excellent - 3pts</th>
+                    <th scope=“col” class=“overview__table_top”>Satisfactory - 2pts</th>
+                    <th scope=“col” class=“overview__table_top”>Needs Work - 1pt</th>
+                    <th scope=“col” class=“overview__table_top”>Unsatisfactory - 0pt</th>
+                </tr>
+                <tr>
+                    <th scope=“row” class=overview__table_left>Meeting all the requirements</th>
+                    <td>Design follows the given specification.</td>
+                    <td>1~2 items of the given specification are missing.</td>
+                    <td>3~4 items of the given specification are missing.</td>
+                    <td>More than 5 items of the give specification are missing.</td>
+                </tr>
+                <tr class=“odd”>
+                    <th scope=“row” class=overview__table_left>Design Content (UI/UX)</th>
+                    <td>The content is interactive and the interface is easy to use it.</td>
+                    <td>The content is interactive, but the interface is a little bit hard to use.</td>
+                    <td>The content is simple, and the interface is hard to use.</td>
+                    <td>The content is simple, and the interact is not implemented.</td>
+                </tr>
+                <tr>
+                    <th scope=“row” class=overview__table_left>Features of Mobile Phones</th>
+                    <td>The features of mobile devices are well implemented.</td>
+                    <td>The features of mobile devices are implemented.</td>
+                    <td>The features of mobile devices are implemented, but they are not aligned with the purpose.</td>
+                    <td>Any feature of mobile devices are not implemented.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="overview__text">
+            If you are still not sure if you start this course or not, 
+            please watch the following video to better understand what an app is, and why to use it.    
+        </p>
+        <iframe class="overview__video"  src="https://www.youtube.com/embed/D5GrsDmxp1k" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+    </section>
+
+    <!-- Prev and Next direction -->
+    <section id="overview__direction" class="section">
+        <div class="overview__direction_top_container">
+            <h3 class="overview__direction_text">If you are ready, please click NEXT icon to start this course.</h3>
+                
+        </div>
+        <div class="overview__direction_bottom_container">
+            <div class="overview__direction_left_container">
+                <a href="/index.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Home</a>
+            </div>
+            <div class="overview__direction_right_container">
+                <a href="" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Lessons</a>
+            </div>
+        </div>
     </section>
 
     <!-- footer -->

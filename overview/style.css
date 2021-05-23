@@ -1,37 +1,124 @@
-/* Contact.html */
+/* overview.html */
 #overview {
   display: flex;
-  background-color: var(--color-white);
-  padding-top: 180px;
-  padding-bottom: 125px;
+  padding-top: 50px;
   justify-content: center;
+  flex-direction: row;
 }
 
-.overview_container {
+.overview__container {
+  margin: 50px;
   width: 100%;
+  background-color: var(--color-white);
 }
 
-.overview_left_container {
-  width: 50%;
-  float: left;
-  padding-left: 100px;
+.overview__main_img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding: 25px;
 }
 
-.overview_right_container {
-  width: 40%;
-  float: left;
-  padding-left: 100px;
-}
-
-.overview_title {
+.overview__title {
+  margin: 25px;
   color: var(--color-dark-grey);
   text-align: center;
 }
+.overview__subtitle {
+  margin-left: 0px;
+}
 
-.overview_subtitle {
-  color: var(--color-black);
+.overview__text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+}
+
+.overview__video {
+  display: block;
+  margin: auto;
+  width: 560px;
+  height: 315px;
+}
+
+/* overview - direction arrow part */
+#overview__direction {
+  margin: 10px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__direction_top_container {
+  width: 100%;
+  float: top;
+  margin-bottom: 10px;
+}
+
+.overview__direction_bottom_container {
+  width: 100%;
+  float: top;
+  display: flex;
+  flex-direction: row;
+}
+
+.overview__direction_left_container {
+  width: 50%;
+  float: left;
   text-align: left;
-  padding-left: 150px;
+}
+
+.overview__direction_right_container {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+/* Table */
+#overview__bottom {
+  padding: 50px 50px 50px 50px;
+  background-color: var(--color-light-blue);
+  width: 100%;
+}
+.overview__table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--font-small);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  /* background-color: var(--color-extreme-light-grey); */
+}
+th,
+td {
+  padding: 5px;
+  border-spacing: 0;
+  border: 1px solid #dddddd;
+}
+td {
+  width: 185px;
+}
+th {
+  font-weight: bold;
+}
+th.overview__table_top {
+  text-transform: uppercase;
+  background-color: #05668d;
+  color: white;
+}
+th.overview__table_left {
+  width: 245px;
+  text-align: left;
+}
+
+tr {
+  padding: 5px;
+  background-color: var(--color-white);
+}
+
+tr.odd {
+  background-color: var(--color-white);
+}
+tr:hover {
+  background-color: var(--color-medium-blue);
 }
 
 /* For below 768px screen width - for mobile version */

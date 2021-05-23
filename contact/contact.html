@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=sofia">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=sofia"> -->
     <link rel="icon" type="image/png" href="/imgs/logo_small.png">
     <link rel="stylesheet" href="/general_style.css">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="contact.js" defer></script>
     <title>SunEduTech</title>
 </head>
 <body>
@@ -21,9 +21,9 @@
         <div class="navbar__menu">
             <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
             <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
-            <li class="navbar__menu_item">Lessons</li>
+            <!-- <li class="navbar__menu_item">Lessons</li>
             <li class="navbar__menu_item">Assessment</li>
-            <li class="navbar__menu_item">Resources</li>
+            <li class="navbar__menu_item">Resources</li> -->
             <li class="navbar__menu_item"><a href="contact.html">Contact</a></li>
         </div>
         <!-- Toggle Button -->
@@ -38,8 +38,7 @@
             <div class="home__contact_left_container">
                 <h1 class="home__contact_title">Contact</h1>
                 <h3 class="home__contact_text">Hi, I am Sunmi and your instructor. 
-                <br> I am here to show you how to start designing a mobile app for educational purposes. 
-                <br> If you have any problems or questions regarding this course, 
+                <br><br> If you have any problems or questions regarding this course, 
                 feel free to contact me via one of the following methods.
                 <br><br> Thank you so much!
             </h3>
@@ -54,23 +53,75 @@
     <section id="contact__form" class="section">
         <div class="contact__form_container">
             <div class="contact__form_left_container">
-                <h2 class="contact__form_title">Contact</h2>
                 <h3 class="contact__form_address">
-                    <i class="fas fa-map-marker-alt"></i> 124 Sunedu street, Palo Alto, CA 94300
+                    <i class="fas fa-map-marker-alt"></i> Stanford University
+                    450 Serra Mall, Stanford, CA 94305
                 </h3>
                 <h3 class="contact__form_email">
-                    <a class="home__contact_a" href="mailto:sunseol@iu.edu"><i class="fas fa-envelope-square"></i> sunedutech_customer@gmail.com</a>
+                    <i class="fas fa-envelope-square"></i> <a class="home__contact_a" href="mailto:sunseol@iu.edu">sunedutech_customer@gmail.com</a>
                 </h3>
                 <h3 class="contact__form_phone">
-                    <a class="home__contact_a" href="tel:123-456-7890"><i class="fas fa-mobile-alt"></i> +01-650-600-6001</a>
+                    <i class="fas fa-mobile-alt"></i><a class="home__contact_a" href="tel:123-456-7890"> +01-650-600-6001</a>
                 </h3>
                 <h3 class="contact__form_socialnetworks">
                     <a class="home__contact_a" href="https://github.com/Yolongcat96/" title="_blank"><i class="fab fa-github"></i></a>
                     <a class="home__contact_a" href="https://www.linkedin.com/in/sunmi-seol-a27385112/" translate="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://twitter.com/" class="home__contact_a"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" class="home__contact_a"><i class="fab fa-instagram-square"></i></a>
                 </h3>
+                <div class="contact__form_gmap">
+                    <div class="gmap_canvas">
+                        <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=stanford%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:400px;}</style>
+                        <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:400px;}
+                        </style>
+                    </div>
+                </div>
             </div>
             <div class="contact__form_right_container">
-                <h2 class="contact__form_title">Leave me a message</h2>
+                <form action="" onsubmit="form_submit()" id="contact__form_input">
+                    <legend class="contact__form_title">Leave me a message</legend>
+                    <div class="contact__form_right_container_row">
+                        <div class="contact__form_right_container_col-25">
+                        <label for="fname">Your Name</label>
+                    </div>
+                    <div class="contact__form_right_container_col-75">
+                        <input type="text" id="contact__form_name" name="name" placeholder="Your name">
+                    </div>
+                    </div>
+                    <div class="contact__form_right_container_row">
+                    <div class="contact__form_right_container_col-25">
+                        <label for="lname">Email</label>
+                    </div>
+                    <div class="contact__form_right_container_col-75">
+                        <input type="text" id="contact__form_email" name="email" placeholder="Email address">
+                    </div>
+                    </div>
+                    <div class="contact__form_right_container_row">
+                    <div class="contact__form_right_container_col-25">
+                        <label for="country">Category</label>
+                    </div>
+                    <div class="contact__form_right_container_col-75">
+                        <select id="contact__form_category" name="category">
+                        <option value="content">Content</option>
+                        <option value="technical">Technical Problem</option>
+                        <option value="additional">Additional Problem</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="contact__form_right_container_row">
+                    <div class="contact__form_right_container_col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="contact__form_right_container_col-75">
+                        <textarea id="subject" name="subject" placeholder="Write your message" style="height:200px"></textarea>
+                    </div>
+                    </div>
+                    <div class="contact__form_right_container_row">
+                    <input type="submit" value="Submit">
+                    </div>
+                </form>
             </div>
         </div>
     </section>

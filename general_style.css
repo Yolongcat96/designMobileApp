@@ -10,6 +10,7 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
+  --color-extreme-light-grey: #ebe7e7;
   --color-blue: #1565c0;
   --color-medium-blue: #5e92f3;
   --color-light-blue: #d7e4fc;
@@ -176,7 +177,7 @@ section common .section {
 }
 
 .direction__arrow_text {
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 25px;
   text-align: left;
 }
@@ -185,8 +186,22 @@ section common .section {
   font-size: var(--font-small);
   color: var(--color-blue);
   padding-bottom: 50px;
-  padding-right: 50px;
+  padding-right: 30px;
+  margin-left: 30px;
   text-align: right;
+}
+
+.home__sub_listitem {
+  text-align: left;
+  padding: 5px;
+  font-size: var(--font-small);
+  color: var(--color-dark-grey);
+  line-height: 1.8em;
+}
+
+.home__sub_description {
+  text-align: left;
+  line-height: 1.5em;
 }
 
 /* For below 768px screen width - for mobile version */
