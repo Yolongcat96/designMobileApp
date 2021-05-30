@@ -123,13 +123,6 @@ tr:hover {
 
 /* For below 768px screen width - for mobile version */
 @media screen and (max-width: 768px) {
-  .home__contact_container {
-    width: 100%;
-  }
-  .home__contact_right_container {
-    width: 100%;
-  }
-
   .section {
     padding: 16px;
     padding-top: 50px;

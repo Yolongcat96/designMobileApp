@@ -1,0 +1,160 @@
+#resources {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.resources__contaeinr {
+  margin: 50px;
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.resources___title {
+  margin: 25px;
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+
+.resources__subtitle {
+  margin-left: 0px;
+}
+
+.resources__text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+}
+
+/* Design tools */
+.resources__designtools {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+
+.designtools {
+  text-align: center;
+  align-items: center;
+}
+
+.designtools__icon {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.designtools__title {
+  text-align: center;
+  color: var(--color-dark-grey);
+}
+
+.designtools__description {
+  text-align: center;
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  line-height: 1.5em;
+}
+
+/* free image */
+#freeimages {
+  padding: 40px;
+  background-color: var(--color-light-blue);
+  text-align: center;
+}
+.resources__freeimage {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+  padding: auto;
+}
+
+.freeimage {
+  justify-content: center;
+}
+
+.freeimage__icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  color: var(--color-blue);
+}
+
+.freeimage__title {
+  text-align: center;
+  align-content: center;
+  color: var(--color-dark-grey);
+}
+
+.freeimage__description {
+  text-align: center;
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
+  line-height: 1.5em;
+}
+
+/* userful video */
+#videos {
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+}
+.resources__video {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video {
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.video__title,
+.video__description {
+  color: var(--color-dark-grey);
+}
+
+.video__description {
+  font-size: var(--font-small);
+}
+
+/* direction arrow part */
+#resources__direction {
+  margin: 10px 50px 50px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.resources__direction_container {
+  width: 100%;
+}
+
+.resources__direction_left_container {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+/* For below 768px screen width - for mobile version */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 16px;
+    padding-top: 50px;
+  }
+
+  .resources__designtools {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .designtools {
+    margin-bottom: 30px;
+  }
+
+  .resources__video {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
