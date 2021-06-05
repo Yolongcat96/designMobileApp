@@ -320,4 +320,12 @@ section common .section {
   .navbar__menu.open {
     display: block;
   }
+
+  .direction_left_container {
+    width: 100%;
+  }
+
+  .direction_right_container {
+    width: 100%;
+  }
 }
