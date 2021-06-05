@@ -21,8 +21,20 @@
         <div class="navbar__menu">
             <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
             <li class="navbar__menu_item" data-link="#overview">Overview</li>
-            <!-- <li class="navbar__menu_item">Lessons</li>
-            <li class="navbar__menu_item">Assessment</li> -->
+            <!-- Dropdown for Lessons: 4 lessons -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <li class="navbar__menu_item">
+                        <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                    </li> 
+                </button>
+                <div class="dropdown-content">
+                  <a href="/lessons/lesson1.html">Lesson 1</a>
+                  <a href="/lessons/lessons.html">Lesson 2</a>
+                  <a href="/lessons/lessons.html">Lesson 3</a>
+                </div>
+              </div> 
+            <!-- <li class="navbar__menu_item">Assessment</li> -->
             <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
             <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
         </div>
@@ -42,7 +54,7 @@
                 The course, <strong style="color:var(--color-green)">Designing an Educational Mobile App</strong>,
                 is designed for those who want to make a mobile app, but have no experience in technology. 
                 It takes around 1 hour to complete this course, and you will be supposed to complete 
-                all the provided lessons. This course is composed of the following three lessons.<br>
+                all the provided lessons. This course is composed of the following three lessons and final assessment<br>
             </p>
             <ul>
                 <li class="home__sub_listitem"><strong>Lesson 1</strong>: 
@@ -51,8 +63,8 @@
                     The overall process of developing a mobile app</li>
                 <li class="home__sub_listitem"><strong>Lesson 3</strong>: 
                     Review the existing mobile app</li>
-                    <li class="home__sub_listitem"><strong>Lesson 4</strong>: 
-                        Design Project - Quiz app</li>
+                <li class="home__sub_listitem"><strong>Assessment</strong>: 
+                    Design Project - Quiz app</li>
             </ul>
             <p class="overview__text">
                 Each lesson contains three steps.
@@ -132,8 +144,8 @@
                 <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Home</a>
             </div>
             <div class="overview__direction_right_container">
-                <a href="/resources/resources.html" class="direction__arrow_logo">
-                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Resources</a>
+                <a href="/lessons/lessons.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Lessons</a>
             </div>
         </div>
     </section>

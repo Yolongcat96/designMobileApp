@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/imgs/logo_small.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/general_style.css">
+    <link rel="stylesheet" href="/lessons/style.css">
+    <script src="/main.js" defer></script>
+    <title>SunEduTech</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
+        </div>
+        <div class="navbar__menu">
+            <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
+            <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
+            <!-- Dropdown for Lessons: 3 lessons -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <li class="navbar__menu_item">
+                        <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                    </li> 
+                </button>
+                <div class="dropdown-content">
+                    <a href="/lessons/lesson1.html">Lesson 1</a>
+                    <a href="/lessons/lessons.html">Lesson 2</a>
+                    <a href="/lessons/lessons.html">Lesson 3</a>
+                </div>
+            </div> 
+            <!-- <li class="navbar__menu_item">Assessment</li> -->
+            <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
+            <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
+        </div>
+        <!-- Toggle Button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+    <!-- overview -->
+    <section id = "lessons" class="section">
+        <div class="lessons__container">
+            <h1 class="lessons__title">Overview</h1>
+            <h2 class="lessons__subtitle">About this course</h2>
+            <p class="lessons__text">
+                The course, <strong style="color:var(--color-green)">Designing an Educational Mobile App</strong>,
+                is designed for those who want to make a mobile app, but have no experience in technology. 
+                It takes around 1 hour to complete this course, and you will be supposed to complete 
+                all the provided lessons. This course is composed of the following three lessons.<br>
+            </p>
+        </div>
+    </section>
+
+    <!-- Prev and Next direction -->
+    <section id="direction" class="section">
+        <div class="direction_top_container">
+            <h3 class="direction_text">If you are ready, please click NEXT icon to start this course.</h3>
+                
+        </div>
+        <div class="direction_bottom_container">
+            <div class="direction_left_container">
+                <a href="/lessons/lessons.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Lessons</a>
+            </div>
+            <div class="direction_right_container">
+                <a href="/resources/resources.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer" class="section">
+        <div class="footer__right_container">
+            <p class="footer__text">Learn now for your dream!</p>
+            <p class="footer__rights">© 2021 SunEduTech - All rights reserved</p>
+        </div>
+    </section>
+
+    </body>
+    </html>

@@ -24,8 +24,20 @@
         <div class="navbar__menu">
             <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
             <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
-            <!-- <li class="navbar__menu_item">Lessons</li>
-            <li class="navbar__menu_item">Assessment</li> -->
+            <!-- Dropdown for Lessons: 4 lessons -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <li class="navbar__menu_item">
+                        <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                    </li> 
+                </button>
+                <div class="dropdown-content">
+                  <a href="/lessons/lesson1.html">Lesson 1</a>
+                  <a href="/lessons/lessons.html">Lesson 2</a>
+                  <a href="/lessons/lessons.html">Lesson 3</a>
+                </div>
+              </div> 
+            <!-- <li class="navbar__menu_item">Assessment</li> -->
             <li class="navbar__menu_item"><a href="resources.html">Resources</a></li>
             <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
         </div>
@@ -193,8 +205,8 @@
         <div class="resources__direction_container">
             <div class="resources__direction_left_container">
                 <!-- It should be added -->
-                <a href="/overview/overview.html" class="direction__arrow_logo">
-                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Overview</a>
+                <a href="/lessons/lessons.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Lesson 1</a>
             </div>
         </div>
     </section>

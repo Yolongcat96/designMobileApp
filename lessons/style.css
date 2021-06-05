@@ -1,0 +1,66 @@
+/* Lessons */
+/* overview.html */
+#lessons {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.lessons__container {
+  margin: 50px;
+  width: 100%;
+  background-color: var(--color-white);
+  float: left;
+}
+.lessons__title {
+  margin: 25px;
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+.lessons__subtitle {
+  margin-left: 0px;
+}
+
+.lessons__text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+}
+
+.lessons__box {
+  background: transparent;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  border: 2px solid var(--color-grey);
+  border-radius: 1em;
+  box-shadow: 6px 6px grey;
+  float: left;
+  margin-right: 80px;
+  justify-content: center;
+}
+
+.lessons__box__img {
+  width: 100px;
+  height: 180px;
+}
+
+.lessons__box:hover {
+  background: var(--color-light-blue);
+  text-decoration-color: var(--color-black);
+}
+
+.lessons__video {
+  display: block;
+  margin: auto;
+  width: 560px;
+  height: 315px;
+}
+
+/* For below 768px screen width - for mobile version */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 16px;
+    padding-top: 50px;
+  }
+}
