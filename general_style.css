@@ -21,9 +21,11 @@
   --color-light-green: rgb(132, 236, 132);
   --color-green: green;
   --color-dark-green: rgb(3, 83, 3);
+
   /* Font Size */
   --font-large: 44px;
   --font-medium: 28px;
+  --font-semi-medium: 24px;
   --font-regular: 20px;
   --font-small: 18px;
   --font-micro: 16px;
@@ -73,6 +75,7 @@ h1 {
   font-weight: var(--weight-bold);
   color: var(--color-light-grey);
   margin: 16px 0px 0 0;
+  line-height: 1.5em;
 }
 
 h2 {
@@ -82,6 +85,7 @@ h2 {
   margin: 8x 0;
   text-align: left;
   margin-left: var(--constant-left-padding);
+  line-height: 1.5em;
 }
 
 h3 {
@@ -91,6 +95,7 @@ h3 {
   margin: 8x 0;
   text-align: left;
   margin-left: var(--constant-left-padding);
+  line-height: 1.5em;
 }
 
 p {
@@ -98,6 +103,7 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-dark-grey);
   margin: 4x 0;
+  line-height: 1.5em;
 }
 
 section common .section {
