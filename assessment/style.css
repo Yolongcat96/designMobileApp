@@ -3,12 +3,13 @@
   display: flex;
   padding-top: 50px;
   justify-content: center;
+  background-image: url(/imgs/assessment_bg.png);
 }
 
 .assessment__container {
   margin: 50px;
   width: 100%;
-  background-color: var(--color-white);
+  background-color: transparent;
   float: left;
 }
 .assessment__title {
@@ -119,9 +120,10 @@
   font-size: var(--font-regular);
 }
 
-input[type="submit"] {
+button[type="submit"] {
   background-color: var(--color-green);
   color: white;
+  width: 120px;
   margin-top: 15px;
   padding: 12px 25px;
   border: none;
@@ -131,8 +133,8 @@ input[type="submit"] {
   font-size: var(--font-small);
 }
 
-input[type="submit"]:hover {
-  background-color: var(--color-green);
+button[type="submit"]:hover {
+  background-color: var(--color-dark-green);
 }
 
 .submission__templage_a {
