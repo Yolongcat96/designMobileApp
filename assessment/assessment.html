@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="Sun, 06 June 2021 12:12:12 GMT">
+    <meta http-equiv="Pragma" content="no-cache">
+    <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/imgs/logo_small-new.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/general_style.css">
+    <link rel="stylesheet" href="/assessment/style.css">
+    <script src="/main.js" defer></script>
+    <script src="lessons.js" defer></script>
+    <title>SunEduTech</title>
+</head>
+<body>
+    <!-- Header: Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
+            </div>
+            <div class="navbar__menu">
+                <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
+                <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
+                <!-- Dropdown for Lessons: 3 lessons -->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <li class="navbar__menu_item">
+                            <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                        </li> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/lessons/lesson1.html">Lesson 1</a>
+                        <a href="/lessons/lessons.html">Lesson 2</a>
+                        <a href="/lessons/lessons.html">Lesson 3</a>
+                    </div>
+                </div> 
+                <li class="navbar__menu_item"><a href="/assessment/assessment.html">Assessment</li>
+                <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
+                <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
+            </div>
+            <!-- Toggle Button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+        </nav>
+    </header>
+
+    <!-- Assessment -->
+    <section id = "assessment" class="section">
+        <div class="assessment__container">
+            <h1 class="assessment__title">Assessment</h1>
+            <h2 class="assessment__subtitle">Final Design Project</h2>
+            <p class="assessment__text">
+                You will design a mobile app based on the proviced specification. 
+                Please read carefully instruction and specification of the intended mobile app.
+                Design a mobile app and submit the mock-up design with description of the overall 
+                process of the app. 
+                The submitted mobile app design will be reviewed based on the rubric in below table.
+            </p>
+        </div>
+    </section>
+
+    <section id="assessment__instruction">
+        <div class="assessment__box">
+            <h2 class="assessment__subtitle">Instruction:
+                <ol class="assessment__list_text">
+                    <li>Read the below specification</li>
+                    <li>Identify composing elements and interface from the specification</li>
+                    <li>Create a table for elements</li>
+                    <li>Draw the mock-up using a pencil-and-paper or design tool such as Power Point, 
+                        Photoshop, or Illustrator</li>
+                    <li>Submit the design document for one of the following formats.
+                        <ul>
+                            <li><strong>Option 1:</strong>
+                                create word document, describe the elements and interfact of the app. 
+                                Draw the mock-up and embed it into this document. 
+                                Submit it.
+                            </li>
+                            <li><strong>Option 2:</strong>
+                                open a design tool, draw the mock-up, and add descriptions of the elements and interface,
+                                and export pdf,png, pr jpeg file. Submit it. 
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </h2>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <div class="assessment__box">
+            <h2 class="assessment__subtitle">Specification:
+                <ul class="assessment__list_text">
+                    <li>
+                        Purpose of this app: to educate elementary school students on bicycle safety
+                    </li>
+                    <li>At least three pages are required: home page, problem-sovling page, and quiz-result page</li>
+                    <li>Home page must contain the title of this app</li>
+                    <li>Problem-solving page must contain the following parts:
+                        <ul>
+                            <li>progress bar of showing the current question number and percentage of completion</li>
+                            <li>question</li>
+                            <li>direction buttons</li>
+                            <li>reaction features (correct or wrong)</li>
+                    </ul>
+                    </li>
+                    <li>Quiz-result page must contain the totle score of the quiz and two menu buttons, quiz again and go home</li>
+                </ul>
+            </h2>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <div class="assessment__box">
+            <h2 class="assessment__subtitle">Notes: <p style="color: red;">please carefully read the followings</p>
+                <ul class="assessment__list_text">
+                    <li>
+                        All graphics used in app design must be created or drawn by you. 
+                        However, for cell-phone image, you can use royalty-free images or use templated provided. 
+                        You receive 0 point if downloaded graphics are included. 
+                    </li>
+                    <li>Your drawing skills will not be evaluated, only if the content that meets 
+                        the specification is well placed on the appropriate places will be assessed.</li>
+                    <li>The provided app design is an example. You don't need to follow that. 
+                        You must create your own design not imitating this.</li>
+                </ul>
+            </h2>
+        </div>
+    </section>
+
+    <section id="assessment__rubric">
+        <div>
+            <h2 class="assessment__subtitle">Assessment Rubric</h2>
+        </div>
+        <div>
+            <p class="assessment__text">
+                The assessment rubric in below table for the final design project is as follows.
+                Please carefully read the rubric. 
+                If you have any questions, feel free to
+                <i class="fas fa-envelope-square"></i> <a class="contact_email_a" href="mailto:sunseol@iu.edu">contact me</a>
+            </p>
+        </div>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope=“col” class=“table_top”>Evaluation Criteria</th>
+                    <th scope=“col” class=“table_top”>Excellent - 3pts</th>
+                    <th scope=“col” class=“table_top”>Satisfactory - 2pts</th>
+                    <th scope=“col” class=“table_top”>Needs Work - 1pt</th>
+                    <th scope=“col” class=“table_top”>Unsatisfactory - 0pt</th>
+                </tr>
+                <tr>
+                    <th scope=“row” class=table_left>Meeting all the requirements</th>
+                    <td>Design follows the given specification.</td>
+                    <td>1~2 items of the given specification are missing.</td>
+                    <td>3~4 items of the given specification are missing.</td>
+                    <td>More than 5 items of the give specification are missing.</td>
+                </tr>
+                <tr class=“odd”>
+                    <th scope=“row” class=table_left>Design Content (UI/UX)</th>
+                    <td>The content is interactive and the interface is easy to use it.</td>
+                    <td>The content is interactive, but the interface is a little bit hard to use.</td>
+                    <td>The content is simple, and the interface is hard to use.</td>
+                    <td>The content is simple, and the interact is not implemented.</td>
+                </tr>
+                <tr>
+                    <th scope=“row” class=table_left>Features of Mobile Phones</th>
+                    <td>The features of mobile devices are well implemented.</td>
+                    <td>The features of mobile devices are implemented.</td>
+                    <td>The features of mobile devices are implemented, but they are not aligned with the purpose.</td>
+                    <td>Any feature of mobile devices are not implemented.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="assessment__example">
+        <div>
+            <h2 class="assessment__subtitle">Example Mock-up Design</h2>
+        </div>
+        <div class="example__container">
+            <img class="example__img" src="/imgs/example1.png" alt="example mockup design">
+        </div>
+        <div class="example__container">
+            <img class="example__img" src="/imgs/example2.png" alt="example mockup design">
+        </div>
+    </section>
+
+    <section id="assessment__submission">
+        <div>
+            <h2 class="assessment__subtitle">Submission</h2>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <div>
+            <p class="assessment__submission_text"><strong>Points</strong> 12</p>
+            <p class="assessment__submission_text"><strong>Time Limit</strong> none</p>
+            <p class="assessment__submission_text"><strong>Template </strong> 
+                <a href="https://microsoft-powerpoint.en.softonic.com/" class="submission__templage_a">
+                    <i class="fas fa-download"></i></a>
+            </p>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <div class="submission__container">
+            <p class="assessment__text">
+                If you are ready, please submit your project.
+            </p>
+            <form action="/action_page.php">
+                <input class="sumission__item" type="file" id="myFile" name="filename">
+                <!-- <input class="sumission__item" type="submit"> -->
+            </form>
+            <form action="" onsubmit="form_submit()" id="assessment_submission_input">
+                <input class="sumission__item" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Prev and Next direction -->
+    <section id="direction" class="section">
+        <div class="direction_top_container">
+            <h3 class="direction_text">Please click <strong>NEXT</strong> icon to move to Resources.</h3>  
+        </div>
+        <div class="direction_bottom_container">
+            <div class="direction_left_container">
+                <a href="/lessons/lessons.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Lesson 3</a>
+            </div>
+            <div class="direction_right_container">
+                <a href="/resources/resources.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section id="footer" class="section">
+            <div class="footer__right_container">
+                <p class="footer__text">Learn now for your dream!</p>
+                <p class="footer__rights">&copy; 2021 SunEduTech - All rights reserved</p>
+            </div>
+        </section>
+    </footer>
+
+    </body>
+    </html>

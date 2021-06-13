@@ -16,36 +16,38 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
-        </div>
-        <div class="navbar__menu">
-            <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
-            <li class="navbar__menu_item" data-link="#overview">Overview</li>
-            <!-- Dropdown for Lessons: 4 lessons -->
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <li class="navbar__menu_item">
-                        <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
-                    </li> 
-                </button>
-                <div class="dropdown-content">
-                  <a href="/lessons/lesson1.html">Lesson 1</a>
-                  <a href="/lessons/lessons.html">Lesson 2</a>
-                  <a href="/lessons/lessons.html">Lesson 3</a>
-                </div>
-              </div> 
-            <!-- <li class="navbar__menu_item">Assessment</li> -->
-            <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
-            <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
-        </div>
-        <!-- Toggle Button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-
-    </nav>
+    <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
+            </div>
+            <div class="navbar__menu">
+                <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
+                <li class="navbar__menu_item" data-link="#overview">Overview</li>
+                <!-- Dropdown for Lessons: 4 lessons -->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <li class="navbar__menu_item">
+                            <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                        </li> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="/lessons/lesson1.html">Lesson 1</a>
+                      <a href="/lessons/lessons.html">Lesson 2</a>
+                      <a href="/lessons/lessons.html">Lesson 3</a>
+                    </div>
+                  </div> 
+                  <li class="navbar__menu_item"><a href="/assessment/assessment.html">Assessment</li>
+                <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
+                <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
+            </div>
+            <!-- Toggle Button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+        </nav>
+    </header>
 
     <!-- overview -->
     <section id = "overview" class="section">
@@ -53,18 +55,18 @@
             <h1 class="overview__title">Overview</h1>
             <h2 class="overview__subtitle">About this course</h2>
             <p class="overview__text">
-                The course, <strong style="color:var(--color-green)">Designing an Educational Mobile App</strong>,
+                The course, <strong style="color:var(--color-green)">How to Design a Mobile App for Education</strong>,
                 is designed for those who want to make a mobile app, but have no experience in technology. 
                 It takes around 1 hour to complete this course, and you will be supposed to complete 
                 all the provided lessons. This course is composed of the following three lessons and final assessment<br>
             </p>
             <ul>
                 <li class="home__sub_listitem"><strong>Lesson 1</strong>: 
-                    What is a mobile app?</li>
+                    The definition of a mobile app and the overall process of developing a mobile app </li>
                 <li class="home__sub_listitem"><strong>Lesson 2</strong>: 
-                    The overall process of developing a mobile app</li>
-                <li class="home__sub_listitem"><strong>Lesson 3</strong>: 
                     Review the existing mobile app</li>
+                <li class="home__sub_listitem"><strong>Lesson 3</strong>: 
+                    Read the specification, identify the items, and draw the mock-up</li>
                 <li class="home__sub_listitem"><strong>Assessment</strong>: 
                     Design Project - Quiz app</li>
             </ul>
@@ -137,7 +139,7 @@
     <!-- Prev and Next direction -->
     <section id="overview__direction" class="section">
         <div class="overview__direction_top_container">
-            <h3 class="overview__direction_text">If you are ready, please click NEXT icon to start this course.</h3>
+            <h3 class="overview__direction_text">If you are ready, please click <strong>NEXT</strong> icon to start this course.</h3>
                 
         </div>
         <div class="overview__direction_bottom_container">
@@ -153,12 +155,14 @@
     </section>
 
     <!-- footer -->
-    <section id="footer" class="section">
-        <div class="footer__right_container">
-            <p class="footer__text">Learn now for your dream!</p>
-            <p class="footer__rights">© 2021 SunEduTech - All rights reserved</p>
-        </div>
-    </section>
+    <footer>
+        <section id="footer" class="section">
+            <div class="footer__right_container">
+                <p class="footer__text">Learn now for your dream!</p>
+                <p class="footer__rights">&copy; 2021 SunEduTech - All rights reserved</p>
+            </div>
+        </section>
+    </footer>
 
     </body>
     </html>

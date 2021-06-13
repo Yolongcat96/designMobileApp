@@ -19,36 +19,37 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
-        </div>
-        <div class="navbar__menu">
-            <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
-            <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
-            <!-- Dropdown for Lessons: 4 lessons -->
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <li class="navbar__menu_item">
-                        <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
-                    </li> 
-                </button>
-                <div class="dropdown-content">
-                  <a href="/lessons/lesson1.html">Lesson 1</a>
-                  <a href="/lessons/lessons.html">Lesson 2</a>
-                  <a href="/lessons/lessons.html">Lesson 3</a>
-                </div>
-              </div> 
-            <!-- <li class="navbar__menu_item">Assessment</li> -->
-            <li class="navbar__menu_item"><a href="resources.html">Resources</a></li>
-            <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
-        </div>
-        <!-- Toggle Button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-
-    </nav>
+    <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
+            </div>
+            <div class="navbar__menu">
+                <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
+                <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
+                <!-- Dropdown for Lessons: 4 lessons -->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <li class="navbar__menu_item">
+                            <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                        </li> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="/lessons/lesson1.html">Lesson 1</a>
+                      <a href="/lessons/lessons.html">Lesson 2</a>
+                      <a href="/lessons/lessons.html">Lesson 3</a>
+                    </div>
+                  </div> 
+                  <li class="navbar__menu_item"><a href="/assessment/assessment.html">Assessment</li>
+                <li class="navbar__menu_item"><a href="resources.html">Resources</a></li>
+                <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
+            </div>
+            <!-- Toggle Button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>    
+    </header>
 
     <!-- resources -->
     <section id = "resources" class="section">
@@ -214,12 +215,14 @@
     </section>
 
     <!-- footer -->
-    <section id="footer" class="section">
-        <div class="footer__right_container">
-            <p class="footer__text">Learn now for your dream!</p>
-            <p class="footer__rights">© 2021 SunEduTech - All rights reserved</p>
-        </div>
-    </section>
+    <footer>
+        <section id="footer" class="section">
+            <div class="footer__right_container">
+                <p class="footer__text">Learn now for your dream!</p>
+                <p class="footer__rights">&copy; 2021 SunEduTech - All rights reserved</p>
+            </div>
+        </section>
+    </footer>
 
     </body>
     </html>

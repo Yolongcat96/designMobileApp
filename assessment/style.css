@@ -1,0 +1,147 @@
+/* assessment.html */
+#assessment {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.assessment__container {
+  margin: 50px;
+  width: 100%;
+  background-color: var(--color-white);
+  float: left;
+}
+.assessment__title {
+  margin: 25px;
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+.assessment__subtitle {
+  margin-left: 0px;
+}
+
+.assessment__text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+  font-size: var(--font-regular);
+}
+
+.assessment__list_text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+}
+
+/* assessment__instruction */
+#assessment__instruction {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-light-blue);
+}
+
+.instruction__container {
+  margin: 25px;
+  width: 100%;
+  background-color: var(--color-white);
+  float: left;
+}
+
+.assessment__box {
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--color-grey);
+  float: left;
+  margin: 40px 40px 40px 0px;
+  justify-content: center;
+}
+
+/* assessment__rubric */
+#assessment__rubric {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-white);
+}
+
+.contact_email_a {
+  color: var(--color-dark-blue);
+  padding-right: 10px;
+}
+
+/* assessment__example */
+#assessment__example {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-light-blue);
+}
+
+.example__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.example__img {
+  width: 50%;
+}
+
+/* assessment__submission */
+#assessment__submission {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-white);
+}
+
+.submission__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 25px 0px 0px;
+}
+
+.sumission__item {
+  float: left;
+}
+
+.assessment__submission_text {
+  margin-left: 15px;
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+  font-size: var(--font-regular);
+}
+
+input[type="submit"] {
+  background-color: var(--color-green);
+  color: white;
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  font-size: var(--font-small);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-green);
+}
+
+.submission__templage_a {
+  color: var(--color-dark-blue);
+}
+
+/* For below 768px screen width - for mobile version */
+@media screen and (max-width: 768px) {
+  .example__img {
+    width: 100%;
+  }
+}

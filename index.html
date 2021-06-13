@@ -16,42 +16,44 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <a href="index.html"><img src="imgs/logo2.png" alt="company logo"></a>
-        </div>
-        <div class="navbar__menu">
-            <li class="navbar__menu_item active" data-link="#home">Home</li>
-            <li class="navbar__menu_item"><a href="./overview/overview.html">Overview</a></li>
-            <!-- Dropdown for Lessons: 4 lessons -->
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <li class="navbar__menu_item">
-                        <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
-                    </li> 
-                </button>
-                <div class="dropdown-content">
-                  <a href="/lessons/lesson1.html">Lesson 1</a>
-                  <a href="/lessons/lessons.html">Lesson 2</a>
-                  <a href="/lessons/lessons.html">Lesson 3</a>
-                </div>
-              </div> 
-            <!-- <li class="navbar__menu_item">Assessment</li> -->
-            <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
-            <li class="navbar__menu_item"><a href="./contact/contact.html">Contact</a></li>
-        </div>
-        <!-- Toggle Button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-
-    </nav>
+    <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <a href="index.html"><img src="imgs/logo2.png" alt="company logo"></a>
+            </div>
+            <div class="navbar__menu">
+                <li class="navbar__menu_item active" data-link="#home">Home</li>
+                <li class="navbar__menu_item"><a href="./overview/overview.html">Overview</a></li>
+                <!-- Dropdown for Lessons: 4 lessons -->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <li class="navbar__menu_item">
+                            <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                        </li> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="/lessons/lesson1.html">Lesson 1</a>
+                      <a href="/lessons/lessons.html">Lesson 2</a>
+                      <a href="/lessons/lessons.html">Lesson 3</a>
+                    </div>
+                  </div> 
+                  <li class="navbar__menu_item"><a href="/assessment/assessment.html">Assessment</li>
+                <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
+                <li class="navbar__menu_item"><a href="./contact/contact.html">Contact</a></li>
+            </div>
+            <!-- Toggle Button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
     <!-- Home -->
     <section id="home" class="section">
         <div class="home__container">
             <div class="home__left_container">
-                <h1 class="home__title">Designing an <br><span>Educational <br> Mobile App</span></h1>
+
+                <h1 class="home__title">How to Design <br><span>a Mobile App <br> for Education</span></h1>
                 <br>
                 <button class="home__button" data-link="#home__sub">Start a Course</button>
             </div>
@@ -65,7 +67,7 @@
     <section id="home__sub" class="section">
         <div class="home__sub_top">
             <h1 class="home__sub_title">Welcome to 
-                <span style="color: darkgreen">Designing an Educational Mobile App</span>
+                <span style="color: darkgreen">How to Design a Mobile App for Education</span>
             </h1>
         <h3 class="home__sub_description">
             Do you want to make a mobile app for your teaching or do you want to make a variety of mobile apps for education? 
@@ -93,7 +95,7 @@
 
     <!-- Next Directive -->
     <section id="direction__arrow_text" class="section">
-        <div class="direction__arrow_text"><h3>Please click the below icon if you want to learn more about this course.</h3></div>
+        <div class="direction__arrow_text"><h3>Please click <strong>NEXT</strong> icon if you want to learn more about this course.</h3></div>
         <div class="direction__arrow_logo">
             <a href="./overview/overview.html" class="direction__arrow_logo">
                 <img src="imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Overview</a>
@@ -101,11 +103,14 @@
     </section>
 
     <!-- footer -->
-    <section id="footer" class="section">
-        <div class="footer__right_container">
-            <p class="footer__text">Learn now for your dream!</p>
-            <p class="footer__rights">© 2021 SunEduTech - All rights reserved</p>
-        </div>
-    </section>
+    <footer>
+        <section id="footer" class="section">
+            <div class="footer__right_container">
+                <p class="footer__text">Learn now for your dream!</p>
+                <p class="footer__rights">&copy; 2021 SunEduTech - All rights reserved</p>
+            </div>
+        </section>
+    </footer>
+
 </body>
 </html>

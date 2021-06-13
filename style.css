@@ -79,18 +79,6 @@
   color: black;
 }
 
-/* .home__sub_listitem {
-  text-align: left;
-  padding: 5px;
-  font-size: var(--font-small);
-  color: var(--color-dark-grey);
-}
-
-.home__sub_description {
-  text-align: left;
-  line-height: 1.5em;
-} */
-
 #home__next_direction {
   width: 100%;
 }
