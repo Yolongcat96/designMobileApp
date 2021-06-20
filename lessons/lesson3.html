@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="Sun, 06 June 2021 12:12:12 GMT">
+    <meta http-equiv="Pragma" content="no-cache">
+    <script src="https://kit.fontawesome.com/51389e4e28.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/imgs/logo_small-new.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/general_style.css">
+    <link rel="stylesheet" href="/lessons/style_lesson3.css">
+    <link rel="stylesheet" href="/assessment/style.css">
+    <script src="/main.js" defer></script>
+    <script src="lessons.js" defer></script>
+    <title>SunEduTech</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <a href="/index.html"><img src="/imgs/logo2.png" alt="company logo"></a>
+            </div>
+            <div class="navbar__menu">
+                <li class="navbar__menu_item"><a href="/index.html">Home</a></li>
+                <li class="navbar__menu_item"><a href="/overview/overview.html">Overview</a></li>
+                <!-- Dropdown for Lessons: 3 lessons -->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <li class="navbar__menu_item">
+                            <a href="/lessons/lessons.html">Lessons </a><i class="fa fa-caret-down"></i>
+                        </li> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/lessons/lesson1.html">Lesson 1</a>
+                        <a href="/lessons/lesson2.html">Lesson 2</a>
+                        <a href="/lessons/lesson3.html">Lesson 3</a>
+                    </div>
+                </div> 
+                <li class="navbar__menu_item"><a href="/assessment/assessment.html">Assessment</li>
+                <li class="navbar__menu_item"><a href="/resources/resources.html">Resources</a></li>
+                <li class="navbar__menu_item"><a href="/contact/contact.html">Contact</a></li>
+            </div>
+            <!-- Toggle Button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+        </nav>
+    </header>
+
+    <!-- Lesson 3 -->
+    <section id = "lesson3" class="section">
+        <div class="lesson3__container">
+            <h1 class="lesson3__title">Lesson 3</h1>
+            <h2 class="lesson3__subtitle">Desiging a mobile app according to the specification</h2>
+            <p class="lesson3__text">
+                In this lesson, you practice following the overall process of 
+                designing a mobile app according to the given specification.
+            </p>
+        </div>
+    </section>
+
+    <!-- 1. Problem & Specification -->
+    <section id="lesson3__instruction" class="section">
+        <h1 class="directive_text">
+            1. Read the following problem and specfication.
+        </h1>
+        <div class="lesson3__box">
+            <h2 class="lesson3__subtitle">Problem:
+                <ol class="lesson3__list_text">
+                    Paul is the Program Director at the ABC University Graduate School of Education. 
+                    The Graduate School of Education is planning a three-day conference this fall. 
+                    Until last year, the information of the conference was published on the homepage of the graduate school, 
+                    but there were various inconveniences in the actual conference. 
+                    His team received feedback that it's difficult to check session information, 
+                    find session locations, and check for sudden session changes. Based on this feedback, 
+                    his team decided to create a mobile conference app this year.
+                </ol>
+            </h2>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <div class="lesson3__box">
+            <h2 class="lesson3__subtitle">Specification:
+                <ol class="lesson3__list_text">
+                    Paul requested to design a mobile conference app containing the following features.
+                    <ul>
+                        <li>Session information: title, date, speaker, and location</li>
+                        <li>Detailed session page</li>
+                        <li>Speakers information</li>
+                        <li>Map information</li>
+                    </ul>
+                </ol>
+            </h2>
+        </div>
+    </section>
+
+    <!-- 2. Identify the composing items per page -->
+    <section id="identify__items" class="section">
+        <!-- Schedule Page -->
+        <div class="identify__items__container">
+            <h1 class="directive_text">
+                2. Do the following steps to identify the composing itmes of the pages of a mobile app from the given specication.
+            </h1>
+            <div class="identify__items__left_container">
+                <div class="identify__items__box">
+                    <p class="lesson3__list_text">
+                        Read this sentence. Identify the composing items of the <strong>schedule</strong> page.</p>
+                    <p style="color: darkred;"><em>Event information: title, date, speaker, and location</em></p>
+                    <p class="lesson3__list_text" style="color: var(--color-black)">
+                        There will be multiple sessions, so we need a list.
+                        Each list contains title, date, speaker, and location.
+                        There are 3 days so that we need to move to different dates.
+                        Please fill in the rest of tables at the right side. 
+                    </p>
+                </div>
+            </div>
+            <div class="identify__items__right_container">
+                <table class="table" style="width:90%">
+                    <tbody>
+                        <tr>
+                            <th scope=“col” class=“table_top”>Page</th>
+                            <th scope=“col” class=“table_top”>Item</th>
+                            <th scope=“col” class=“table_top”>Function/Feature</th>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td>Date tab</td>
+                            <td>Move to the clicked date</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td>Date tab page</td>
+                            <td>Display information of all the sessions at the clicked date</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td>Session title</td>
+                            <td>Display session title</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <!-- Detailed Session Page -->
+        <div class="identify__items__container">
+            <div class="identify__items__left_container">
+                <div class="identify__items__box" style="height: 380px">
+                    <p class="lesson3__list_text">
+                        Read this sentence. Identify the composing items of the <strong>Detailed Session</strong> page.</p>
+                    <p style="color: darkred;"><em>Detailed Session: title, description, date, speaker, and location</em></p>
+                    <p class="lesson3__list_text" style="color: var(--color-black)">
+                        This page display all information about the clicked one session. 
+                        Each session contains title, speaker, date, location, detailed decription, and session image. 
+                        Please fill in the rest of tables at the right side. 
+                    </p>
+                </div>
+            </div>
+            <div class="identify__items__right_container">
+                <table class="table" style="width:90%">
+                    <tbody>
+                        <tr>
+                            <th scope=“col” class=“table_top”>Page</th>
+                            <th scope=“col” class=“table_top”>Item</th>
+                            <th scope=“col” class=“table_top”>Function/Feature</th>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Detailed Session</th>
+                            <td>Title</td>
+                            <td>Session title</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Detailed Session</th>
+                            <td>Session image</td>
+                            <td>Session related image</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Detailed Session</th>
+                            <td>Session time</td>
+                            <td>Display session starting time and end time</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Detailed Session</th>
+                            <td>Session speaker</td>
+                            <td>Display speaker's name</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <!-- Speaker List Page -->
+        <div class="identify__items__container">
+            <div class="identify__items__left_container">
+                <div class="identify__items__box" style="height: 400px">
+                    <p class="lesson3__list_text">
+                        Read this sentence. Identify the composing items of the <strong>Speaker List</strong> page.</p>
+                    <p style="color: darkred;"><em>Speaker information</em></p>
+                    <p class="lesson3__list_text" style="color: var(--color-black)">
+                        This sentence doesn't have enough information for this page. 
+                        But, you can guess what you need to creat this page. 
+                        <br><i class="fas fa-hand-point-right"></i> There are multiple speakers.
+                        <br><i class="fas fa-hand-point-right"></i> Each speaker has same type of information: profile image, name, role, affiliation
+                        <br><i class="fas fa-hand-point-right"></i> Need to display the same type of object repeatedly -> List
+                        <br>Please fill in the rest of the table at the right side. 
+                    </p>
+                </div>
+            </div>
+            <div class="identify__items__right_container">
+                <table class="table" style="width:90%">
+                    <tbody>
+                        <tr>
+                            <th scope=“col” class=“table_top”>Page</th>
+                            <th scope=“col” class=“table_top”>Item</th>
+                            <th scope=“col” class=“table_top”>Function/Feature</th>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td>Image</td>
+                            <td>Speaker's profile image</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td>Name</td>
+                            <td>Speaker's full name</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td>Role</td>
+                            <td>Speakers' role (job title)</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <!-- Location Map Page -->
+        <div class="identify__items__container">
+            <div class="identify__items__left_container">
+                <div class="identify__items__box" style="height: 360px">
+                    <p class="lesson3__list_text">
+                        Read this sentence. Identify the composing items of the <strong>Map</strong> page.</p>
+                    <p style="color: darkred;"><em>Map Information</em></p>
+                    <p class="lesson3__list_text" style="color: var(--color-black)">
+                        A map of where the conference is held will be displayed. 
+                        However, not much information is included. 
+                        However, we can estimate what will be needed for this page.
+                        <br><i class="fas fa-hand-point-right"></i> Need a map with legend
+                        <br><i class="fas fa-hand-point-right"></i> Search bar at the top to search the session 
+                        <br><i class="fas fa-hand-point-right"></i> View map legend box
+                    </p>
+                </div>
+            </div>
+            <div class="identify__items__right_container">
+                <table class="table" style="width:90%">
+                    <tbody>
+                        <tr>
+                            <th scope=“col” class=“table_top”>Page</th>
+                            <th scope=“col” class=“table_top”>Item</th>
+                            <th scope=“col” class=“table_top”>Function/Feature</th>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Map</th>
+                            <td>Map API</td>
+                            <td>Interactive map such as Google Map</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Map</th>
+                            <td>Search box</td>
+                            <td>Box to allow to enter the text for searching</td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Map</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope=“row” class=table_left>Map</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Draw layout -->
+    <section id="draw__items" class="section" >
+    <!-- Schedule -->
+    <div class="draw__items__container">
+        <h1 class="directive_text">
+            3. Do the following steps to draw a mock-up according to the tables you made at step 2.
+        </h1>
+        <h3 class="lesson3__text">
+            Please place the items at the right phone image. 
+            Download this template and draw the items according to the tables you made at step 2. 
+            <strong>Download layout template </strong> 
+            <a href="https://drive.google.com/file/d/1SAIGZKviCCVn-uOVJiIo6ElBlfOOlvFK/view" class="submission__templage_a">
+                <i class="fas fa-download"></i></a>
+        </h3>
+        <div class="draw__items__left_container">
+            <table class="table" style="width:90%">
+                <tbody>
+                    <tr>
+                        <th scope=“col” class=“table_top”>Page</th>
+                        <th scope=“col” class=“table_top”>Item</th>
+                        <th scope=“col” class=“table_top”>Function/Feature</th>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Schedule</th>
+                        <td>Date tab</td>
+                        <td>Move to the clicked date</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Schedule</th>
+                        <td>Date tab page</td>
+                        <td>Display information of all the sessions at the clicked date</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Schedule</th>
+                        <td>Session title</td>
+                        <td>Display session title</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Schedule</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Schedule</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Schedule</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="draw_items__right_container">
+            <img class="draw_item_img" src="/imgs/schedule.png" alt="schedule page image">
+        </div>
+    </div>
+    <div>
+        <hr class="solid">
+    </div>
+    <!-- Detailed Session -->
+    <div class="draw__items__container">
+        <div class="draw__items__left_container">
+            <table class="table" style="width:90%">
+                <tbody>
+                    <tr>
+                        <th scope=“col” class=“table_top”>Page</th>
+                        <th scope=“col” class=“table_top”>Item</th>
+                        <th scope=“col” class=“table_top”>Function/Feature</th>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Detailed Session</th>
+                        <td>Title</td>
+                        <td>Session title</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Detailed Session</th>
+                        <td>Session image</td>
+                        <td>Session related image</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Detailed Session</th>
+                        <td>Session time</td>
+                        <td>Display session starting time and end time</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Detailed Session</th>
+                        <td>Session speaker</td>
+                        <td>Display speaker's name</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="draw_items__right_container">
+            <img class="draw_item_img" src="/imgs/Detailed.png" alt="schedule page image">
+        </div>
+    </div>
+    <div>
+        <hr class="solid">
+    </div>
+    <!-- Speaker List -->
+    <div class="draw__items__container">
+        <div class="draw__items__left_container">
+            <table class="table" style="width:90%">
+                <tbody>
+                    <tr>
+                        <th scope=“col” class=“table_top”>Page</th>
+                        <th scope=“col” class=“table_top”>Item</th>
+                        <th scope=“col” class=“table_top”>Function/Feature</th>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td>Image</td>
+                        <td>Speaker's profile image</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td>Name</td>
+                        <td>Speaker's full name</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td>Role</td>
+                        <td>Speakers' role (job title)</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Speaker List</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="draw_items__right_container">
+            <img class="draw_item_img" src="/imgs/speakerList.png" alt="schedule page image">
+        </div>
+    </div>
+    <div>
+        <hr class="solid">
+    </div>
+    <!-- Google Map -->
+    <div class="draw__items__container">
+        <div class="draw__items__left_container">
+            <table class="table" style="width:90%">
+                <tbody>
+                    <tr>
+                        <th scope=“col” class=“table_top”>Page</th>
+                        <th scope=“col” class=“table_top”>Item</th>
+                        <th scope=“col” class=“table_top”>Function/Feature</th>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Map</th>
+                        <td>Map API</td>
+                        <td>Interactive map such as Google Map</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Map</th>
+                        <td>Search box</td>
+                        <td>Box to allow to enter the text for searching</td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Map</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope=“row” class=table_left>Map</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="draw_items__right_container">
+            <img class="draw_item_img" src="/imgs/map_draw.png" alt="schedule page image">
+        </div>
+    </div>
+    <div>
+        <hr class="solid">
+    </div>
+    </section>
+
+    <!-- 4. Design the interface between pages -->
+    <section id="design__transition" class="section">
+        <div class="design__transition__container">
+            <h1 class="directive_text">
+                4. Design how to transit between different pages.
+            </h1>
+            <h3 class="lesson3__text">
+                Good Job! 
+                <br>You are alomost done.
+                Design how to move between different pages.
+                Follow the following steps. 
+            </h3>
+            <div class="design__transition__left_container">
+                <div class="design__transition__box">
+                    <h2 class="lesson3__subtitle">Transition:
+                        <p><i class="fas fa-hand-point-right"></i> There are Schedule and Session Detail pages. </p> 
+                        <p><i class="fas fa-hand-point-right"></i> 
+                        We can use <strong style="color: blue;">CLICK</strong> funtion to move to each other.</p> 
+                        <p><i class="fas fa-hand-point-right"></i>
+                        When clicking the session item at session list, move to the detaild page. 
+                        Conversely, when clicking the back icon at the detailed page, go back to the schedule page.
+                        </p> 
+                    </h2>
+                </div>
+            </div>
+            <div class="design__transition_container">
+                <img class="design__transition_img" src="/imgs/schedule_detail.png" alt="schedule page image">
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <div class="design__transition__container">
+            <div class="design__transition__left_container">
+                <div class="design__transition__box" style="height: 400px;">
+                    <h2 class="lesson3__subtitle">Transition:
+                        <p><i class="fas fa-hand-point-right"></i> There are Schedule and Speaker List pages. </p> 
+                        <p><i class="fas fa-hand-point-right"></i> 
+                        But, there is no item to connect to the speaker list at Schedule page. 
+                        So, we need another item. We can use <strong style="color: blue;">TAB</strong> icon to move to each other.</p> 
+                        <p><i class="fas fa-hand-point-right"></i>
+                        When clicking the Speakers icon at session list, move to the Speaker List page. 
+                        Conversely, when clicking the back icon at the detailed page, go back to the schedule page.
+                        </p> 
+                    </h2>
+                </div>
+            </div>
+            <div class="design__transition_container">
+                <img class="design__transition_img" src="/imgs/bottomtab.png" alt="schedule page image">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Final mock-up design -->
+    <section id="finalmockup" class="section">
+        <h1 class="directive_text">
+            5. Final Mock-up Design
+        </h1>
+        <h3 class="lesson3__text">
+            <Strong style="color: darkred;">Congratulations!</Strong>
+            <br>You finished designing a mobile conference app. 
+            Please review the completed mock-up.
+        </h3>
+        <div>
+            <img class="finalmockup_img" src="/imgs/conference_mockup.png" alt="schedule page image">   
+        </div>
+    </section>
+
+    <!-- Prev and Next direction -->
+    <section id="direction" class="section">
+        <div class="direction_top_container">
+            <h3 class="direction_text">Please click <strong>NEXT</strong> icon to move to Assessment.</h3>  
+        </div>
+        <div class="direction_bottom_container">
+            <div class="direction_left_container">
+                <a href="/lessons/lesson2.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Lesson 2</a>
+            </div>
+            <div class="direction_right_container">
+                <a href="/assessment/assessment.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Assessment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section id="footer" class="section">
+            <div class="footer__right_container">
+                <p class="footer__text">Learn now for your dream!</p>
+                <p class="footer__rights">&copy; 2021 SunEduTech - All rights reserved</p>
+            </div>
+        </section>
+    </footer>
+
+    </body>
+    </html>

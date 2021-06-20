@@ -5,6 +5,7 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
+  --color-light-pink: #f7eceb;
   --color-dark-pink: #ff6863;
   --color-black: #000000;
   --color-dark-grey: #4d4d4d;
@@ -49,6 +50,10 @@
 /* Universal tags */
 /* Solid border */
 hr.solid {
+  border-top: 2px solid rgb(185, 175, 175);
+}
+
+hv.solid {
   border-top: 2px solid rgb(185, 175, 175);
 }
 
@@ -142,7 +147,6 @@ article {
   font-size: var(--font-small);
   margin-bottom: 40px;
   margin-top: 40px;
-  /* background-color: var(--color-extreme-light-grey); */
 }
 th,
 td {
