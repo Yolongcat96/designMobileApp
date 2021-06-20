@@ -10,7 +10,8 @@
     <link rel="icon" type="image/png" href="/imgs/logo_small-new.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/general_style.css">
-    <link rel="stylesheet" href="/lessons/style.css">
+    <link rel="stylesheet" href="/assessment/style.css">
+    <link rel="stylesheet" href="/lessons/style_lesson2.css">
     <script src="/main.js" defer></script>
     <script src="lessons.js" defer></script>
     <title>SunEduTech</title>
@@ -51,148 +52,199 @@
     </header>
 
     <!-- Lesson 2 -->
-    <section id = "lessons" class="section">
-        <div class="lessons__container">
-            <h1 class="lessons__title">Lesson 2</h1>
-            <h2 class="lessons__subtitle">Review an existing mobile app</h2>
-
-            <div class="lessons__box__bg">
-                <h3 class="lessons__box__title">
-                    <i class="far fa-bookmark"></i>
-                    <strong>  What is a mobile app?</strong>
-                </h3>
-                <p class="lessons__box__text">
-                    It is a computer program or software application designed to 
-                    run on mobile devices such as <em style="color: var(--color-yellow); font-weight: 600;">cell phones, tablets, or apple watches</em>.
-                </p>
-                <p class="lessons__box__text">
-                    For example, think about Starbucks app. It provides multiple services 
-                    to the customers, such as payment, order, showing menu, and nearest store based on
-                    the customers' locations. Starbucks app is one of business apps that are being used a lot. 
-                </p>
-            </div>
-
-            <img class="lessons__box__bg_img" src="/imgs/starbucks_app.png" alt="starbucks app">
-            <img class="lessons__box__bg_img" src="/imgs/discoveryApp.png" alt="discovery app">
-        </div>
-    </section>
-
-    <section id="lessons__1" class="section">
-        <div class="lessons__1_container">
-            <!-- Better understand -->
-        <div class="lessons__1_left_container">
-            <h2 class="lessons__subtitle">
-                Better understand a mobile app
-            </h2>
-            <div class="lesson1__box">
-                <h3>
-                    <i class="far fa-bookmark"></i>
-                    <strong>  Mobile Apps</strong>
-                </h3>
-                <p class="lessons__text">
-                    Mobile apps (or applications) only run on mobile devices for the specific purposes, 
-                    not run on desktops or laptops. They can work both online and offline. 
-                </p>
-                <iframe class="lessons__video" src="https://www.youtube.com/embed/eth_eZIIylQ" 
-                marginwidth="0" marginheight="0" frameborder="yes" scrolling="yes">
-                </iframe>
-            </div>
-        </div>
-    
-        <!-- Difference between mobile apps and we -->
-        <div class="lessons__1_right_container">
-            <h2 class="lessons__subtitle">
-                What is the difference?
-            </h2>
-            <div class="lesson1__box">
-                <h3>
-                    <i class="far fa-bookmark"></i>
-                    <strong>Mobile Apps Vs. Web Apps</strong></h3>
-                    <ul class="lessons__text">
-                        <li>Mobile Apps: Faster and More Advanced to Implement
-                        </li>
-                        <li>Web Apps: Quicker and Easy to build
-                        </li>
-                    </ul> 
-                    <p class="lesssons__text">
-                        Watch the below video to better understand the difference between the two
-                    </p>
-                <iframe class="lessons__video" src="https://www.youtube.com/embed/SOyedRrJk6Q" 
-                marginwidth="0" marginheight="0" frameborder="yes" scrolling="yes">
-                </iframe>
-            </div>    
-        </div>
-        </div>
-    </section>
-
-    <section id="lessons__2" class="section">
-        <h2 class="lessons__subtitle">
-            How to identify mobile apps?
-        </h2>
-        <div class="lessons__2_container">
-            <div class="lesssons__2_subcontainer">
-                <p class="lessons__2_box"><i class="fas fa-exclamation"></i> <strong> Check Point 1</strong>
-                <br> <br> Check it runs on mobile devices
+    <!-- Brief description of this lesson -->
+    <section id = "lesson2" class="section">
+        <div class="lesson2__container">
+            <h1 class="lesson2__title">Lesson 2</h1>
+            <h2 class="lesson2__subtitle">Reviewing a Mobile App</h2>
+            <p class="lesson2__text">
+                In this lesson, you will review <strong style="color: darkred;">Quizizz</strong>, a quiz mobile app. 
+                You will practice identifying the composing elements of a mobile app page.
             </p>
+        </div>
+    </section>
+
+    <section id="section__page" class="section">
+        <!-- 1. Identify the composting items -->
+        <div class="section__page__container">
+            <h1 class="directive_text">
+                1. Identify big blocks from the page of an app.
+            </h1>
+            <div class="section__page__left_container">
+                <div class="section__page__box">
+                    <p class="lesson3__list_text">
+                    Make a group by merging items under the same purpose on the screen.</p>
+                    <p class="lesson3__list_text"><i class="fas fa-hand-point-right"></i>
+                        Title block
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-hand-point-right"></i>
+                        User related feature block
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-hand-point-right"></i>
+                        List of quizzes 
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-hand-point-right"></i>
+                        Bottom tab block
+                    </p>
+                </div>
             </div>
-            <div class="lesssons__2_subcontainer">
-                <p class="lessons__2_box"><i class="fas fa-exclamation"></i> <strong> Check Point 2</strong>
-                    <br> <br> Check it is download from App Store or Play Store
-                </p>
+            <div class="section__page__right_container">
+                <img class="section__page_img" src="/imgs/review1.png" alt="schedule page image" style="width: 300px;">
             </div>
-            <div class="lesssons__2_subcontainer">
-                <p class="lessons__2_box"><i class="fas fa-exclamation"></i> <strong> Check Point 3</strong>
-                    <br> <br> Check it runs off-line
-                </p>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        <!-- 2. Identify all items -->
+        <div class="section__page__container">
+            <h1 class="directive_text">
+                2. Identify all items per block
+            </h1>
+            <div class="section__page__left_container">
+                <div class="section__page__box">
+                    <p class="lesson3__list_text">
+                    <strong style="color: darkred;">Title Block</strong>
+                    <br> Title block is composed of the followings:</p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Company or app logo
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Hamberger menu
+                    </p>
+                </div>
+            </div>
+            <div class="section__page__right_container">
+                <img class="section__page_img" src="/imgs/titleblock.png" alt="schedule page image">
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+        
+        <div class="section__page__container">
+            <div class="section__page__left_container">
+                <div class="section__page__box">
+                    <p class="lesson3__list_text">
+                    <strong style="color: darkred;">User Info Block</strong>
+                    <br> User Info block is composed of the followings:</p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        User name & user profile image
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Edit user info & view acitieis a user completed or joined
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Progress bar of showing learning process
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Direction texts
+                    </p>
+                </div>
+            </div>
+            <div class="section__page__right_container">
+                <img class="section__page_img" src="/imgs/userblock.png" alt="schedule page image">
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+
+        <div class="section__page__container">
+            <div class="section__page__left_container">
+                <div class="section__page__box">
+                    <p class="lesson3__list_text">
+                    <strong style="color: darkred;">Quiz List Block</strong>
+                    <br> Quiz List Block is composed of the followings:</p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Main vertical slideview: contains multiple subslideview blocks
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Sub horizontal slideview
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Section title and View all button
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Clickable button to move to the individual quiz main view
+                    </p>
+                </div>
+            </div>
+            <div class="section__page__right_container">
+                <img class="section__page_img" src="/imgs/quizlist.png" alt="schedule page image">
+            </div>
+        </div>
+        <div>
+            <hr class="solid">
+        </div>
+
+        <div class="section__page__container">
+            <div class="section__page__left_container">
+                <div class="section__page__box">
+                    <p class="lesson3__list_text">
+                    <strong style="color: darkred;">Bottom Tab Block</strong>
+                    <br> Bottom Tab Block is composed of the followings:</p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Tab icon
+                    </p>
+                    <p class="lesson3__list_text"><i class="fas fa-mouse"></i>
+                        Tab name
+                    </p>
+                </div>
+            </div>
+            <div class="section__page__right_container">
+                <img class="section__page_img" src="/imgs/tabblock.png" alt="schedule page image">
             </div>
         </div>
     </section>
 
-    <section id="lessons__3" class="section">
-        <div class="lessons__3_container">
-            <h2 class="lessons__subtitle">
-                Practice
-            </h2>
-            <p class="lessons__text">
-                Read carefully the following description and decide if this is mobile app, 
-                web app, or website.</p>
-            <div class="lessons__3_box">
-                    <strong style="color: green; font-size: var(--font-medium);">Description</strong> 
-                    <br><p class="lesssons__text">
-                        This software runs on mobile devices, and provides various functions. 
-                        I can upload my pictures and add articles with my account. 
-                        Even I can chat with other peers in real time. 
-                        I can use this software when internet is not available. 
-                        But I should update it when a new version is available. 
-                        <br><br><strong style="color: red; font-size: var(--font-medium);">What Am I?</strong> 
-                    </p>
+    <!-- 3. Draw a layout -->
+    <section id="section2__page" class="section">
+        <!-- 1. Identify the composting items -->
+        <div class="section2__page__container">
+            <h1 class="directive_text">
+                3. Draw the sketch based on the idenfified items.
+            </h1>
+            <div class="section2__page__left_container">
+                <p class="lesson3__list_text">
+                    <strong style="color: darkred;">Quizizz App</strong>
+                    <br> This is the screenshots of the target app
+                </p>
+                <img class="section__page_img" src="/imgs/review1.png" alt="schedule page image" style="width: 300px;">
             </div>
-            <p class="lessons__text">
-                Please submit your answer at the below text box</p>
-            <div class="lessons__3_answer">
-                <form action="" onsubmit="form_submit()" id="answer__form_input">
-                    <textarea id="subject" name="answer" placeholder="Write your answer" style="height:100px">
-                    </textarea>
-                    <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>         
+            <div class="section2__page__right_container">
+                <p class="lesson3__list_text">
+                    <strong style="color: darkred;">Quizizz App Layout</strong>
+                    <br> This is the layout that we draw based on the identified items. 
+                </p>
+                <img class="section__page_img" src="/imgs/final.png" alt="schedule page image" style="width: 260px;">
+            </div>
+        </div>
+    </section>
+
+    <section id="section__page" class="section">
+        <!-- Done reviewing a mobile app-->
+        <div class="section__page__container">
+            <h1 class="directive_text">
+                Good Job!
+            </h1>
+            <p>You successfully finished reviewing <strong style="color: darkred;">Quizizz App</strong> by identifying the composing items. 
+            <br>In the next lesson, you will learn how to design a mobile app step-by-step.</p>
         </div>
     </section>
 
     <!-- Prev and Next direction -->
     <section id="direction" class="section">
         <div class="direction_top_container">
-            <h3 class="direction_text">Please click NEXT icon to move to Resources.</h3>  
+            <h3 class="direction_text">Please click <strong>NEXT</strong> icon to move to Lesson 3.</h3>  
         </div>
         <div class="direction_bottom_container">
             <div class="direction_left_container">
-                <a href="/lessons/lessons.html" class="direction__arrow_logo">
-                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Lessons</a>
+                <a href="/lessons/lesson1.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> PREV: Lesson 1</a>
             </div>
             <div class="direction_right_container">
-                <a href="/resources/resources.html" class="direction__arrow_logo">
-                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Resources</a>
+                <a href="/lessons/lesson3.html" class="direction__arrow_logo">
+                <img src="/imgs/logo_small.png" alt="company logo" width = "25" height="25"> NEXT: Lesson 3</a>
             </div>
         </div>
     </section>

@@ -1,0 +1,151 @@
+/* lesson3.html */
+#lesson2 {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+
+.lesson2__container {
+  margin: 50px;
+  width: 100%;
+  background-color: transparent;
+  float: left;
+}
+.lesson2__title {
+  margin: 25px;
+  color: var(--color-dark-grey);
+  text-align: center;
+}
+.lesson2__subtitle {
+  margin-left: 0px;
+}
+
+.directive_text {
+  color: var(--color-dark-green);
+  line-height: 1.5em;
+  font-size: var(--font-semi-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.lesson2__text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+  font-size: var(--font-regular);
+}
+
+.lesson2__list_text {
+  color: var(--color-dark-grey);
+  line-height: 1.5em;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+}
+
+/* lesson2__instruction */
+#lesson2__instruction {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-light-blue);
+}
+
+.lesson2__container {
+  margin: 25px;
+  width: 100%;
+  background-color: var(--color-white);
+  float: left;
+}
+
+.lesson2__box {
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--color-grey);
+  float: left;
+  margin: 40px 40px 40px 0px;
+  justify-content: center;
+}
+
+/* section_page */
+#section__page {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-light-blue);
+}
+
+.section__page__container {
+  width: 100%;
+}
+.section__page__left_container {
+  width: 50%;
+  float: left;
+}
+
+.section__page__right_container {
+  width: 50%;
+  float: left;
+}
+
+.section__page__box {
+  background-color: var(--color-white);
+  width: 100%;
+  height: 340px;
+  padding: 20px;
+  border: 1px solid var(--color-grey);
+  float: left;
+  margin: 40px 40px 40px 0px;
+  justify-content: left;
+}
+
+.section__page_img {
+  width: 80%;
+  margin: 20px;
+  margin-left: 100px;
+  justify-content: center;
+}
+
+/* section_page */
+#section2__page {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  justify-content: left;
+  background-color: var(--color-white);
+}
+
+.section2__page__container {
+  width: 100%;
+}
+.section2__page__left_container {
+  width: 50%;
+  float: left;
+}
+
+.section2__page__right_container {
+  width: 50%;
+  float: left;
+}
+
+.section2__page__box {
+  background-color: var(--color-light-blue);
+  width: 100%;
+  height: 340px;
+  padding: 20px;
+  border: 1px solid var(--color-grey);
+  float: left;
+  margin: 40px 40px 40px 0px;
+  justify-content: left;
+}
+
+/* For below 768px screen width - for mobile version */
+@media screen and (max-width: 768px) {
+  .section__page__left_container
+    .section__page__right_container
+    .section2__page__left_container
+    .section2__page__right_container {
+    width: 100%;
+  }
+}
