@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/general_style.css">
     <link rel="stylesheet" href="/lessons/style.css">
+    <script src="/lessons/lessons.js" defer></script>
     <script src="/main.js" defer></script>
     <title>SunEduTech</title>
 </head>
@@ -54,31 +55,30 @@
         <div class="lessons__container">
             <h1 class="lessons__title">Lessons</h1>
             <h2 class="lessons__subtitle">About three lessons</h2>
-            <p class="lessons__text">The followings are key concepts of the provided three lessons.</p>
-            <p class="lessons__box"><strong style="color: black; font-size: var(--font-medium);"> Lesson 1</strong>
+            <p class="lessons__text">Here are the highlights of the three lessons provided.</p>
+            <a href="/lessons/lesson1.html" target="_self"><p class="lessons__box"><strong style="color: black; font-size: var(--font-medium);"> Lesson 1</strong>
                 <br><br><i class="fas fa-mouse"></i> Definition of a mobile app
                 <br><i class="fas fa-mouse"></i> Overall process of developing a mobile app
                 <br><br><img class="lessons__box__img" src="/imgs/mobileapp.png" alt="mobile app image">
                 <img class="lessons__box__img" src="/imgs/process.png" alt="mobile app dev image" style="width: 160px; height: 140px;">
-            </p>
-            <p class="lessons__box"><strong style="color: black; font-size: var(--font-medium);"> Lesson 2</strong>
+            </p></a>
+            <a href="/lessons/lesson2.html" target="_self"><p class="lessons__box"><strong style="color: black; font-size: var(--font-medium);"> Lesson 2</strong>
                 <br><br><i class="fas fa-mouse"></i> Review an existing mobile app 
                 <br><i class="fas fa-mouse"></i> Identify the composing items of a mobile app
                 <br><br><img class="lessons__box__img" src="/imgs/review_app.png" alt="review app" style="width: 240px; height: 190px;">
-            </p>
-            <p class="lessons__box"><strong style="color: black; font-size: var(--font-medium);"> Lesson 3</strong>
+            </p></a>
+            <a href="/lessons/lesson3.html" target="_self"><p class="lessons__box"><strong style="color: black; font-size: var(--font-medium);"> Lesson 3</strong>
                 <br><br><i class="fas fa-mouse"></i> Read the specification and identify the items of a mobile app
                 <br><i class="fas fa-mouse"></i> Draw the mockup using a paper or design tools
-                <br><img class="lessons__box__img" src="/imgs/mockup.png" alt="app mockup" style="width: 260px; height: 200px;">
-            </p>
+                <br><img class="lessons__box__img" src="/imgs/mockup2.png" alt="app mockup" style="width: 260px; height: 180px;">
+            </p></a>
         </div>
     </section>
 
     <!-- Prev and Next direction -->
     <section id="direction" class="section">
         <div class="direction_top_container">
-            <h3 class="direction_text">Please click <strong>NEXT</strong> icon to start Lesson 1</h3>
-                
+            <h3 class="direction_text">Click the following <strong>NEXT</strong> icon to start Lesson 1. </h3>
         </div>
         <div class="direction_bottom_container">
             <div class="direction_left_container">
@@ -101,6 +101,11 @@
             </div>
         </section>
     </footer>
+
+    <!-- arrow up -->
+    <button class="arrow-up" data-link="#lessons">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     </body>
     </html>

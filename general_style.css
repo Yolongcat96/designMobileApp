@@ -18,6 +18,7 @@
   --color-dark-blue: #003c8f;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-dark_orange: #e0982c;
   --color-black: #000000;
   --color-light-green: rgb(132, 236, 132);
   --color-green: green;
@@ -356,6 +357,26 @@ tr:hover {
   display: block;
 }
 
+/* scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  color: var(--color-white);
+  background-color: var(--color-dark_orange);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animation-duration) ease-in;
+}
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* For below 768px screen width - for mobile version */
 @media screen and (max-width: 768px) {
   :root {
@@ -397,5 +418,14 @@ tr:hover {
 
   .direction_right_container {
     width: 100%;
+  }
+
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    font-size: 30px;
+    right: 16px;
+    bottom: 16px;
   }
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/general_style.css">
     <link rel="stylesheet" href="/lessons/style_lesson3.css">
     <link rel="stylesheet" href="/assessment/style.css">
-    <script src="/main.js" defer></script>
+    <script src="/lessons/lesson3.js" defer></script>
     <script src="lessons.js" defer></script>
     <title>SunEduTech</title>
 </head>
@@ -55,10 +55,10 @@
     <section id = "lesson3" class="section">
         <div class="lesson3__container">
             <h1 class="lesson3__title">Lesson 3</h1>
-            <h2 class="lesson3__subtitle">Desiging a mobile app according to the specification</h2>
+            <h2 class="lesson3__subtitle">Mobile app design according to specifications</h2>
             <p class="lesson3__text">
-                In this lesson, you practice following the overall process of 
-                designing a mobile app according to the given specification.
+                In this lesson, you will walk through the entire process of 
+                designing a mobile app to specified specifications, step-by-step.
             </p>
         </div>
     </section>
@@ -73,11 +73,11 @@
                 <ol class="lesson3__list_text">
                     Paul is the Program Director at the ABC University Graduate School of Education. 
                     The Graduate School of Education is planning a three-day conference this fall. 
-                    Until last year, the information of the conference was published on the homepage of the graduate school, 
-                    but there were various inconveniences in the actual conference. 
-                    His team received feedback that it's difficult to check session information, 
-                    find session locations, and check for sudden session changes. Based on this feedback, 
-                    his team decided to create a mobile conference app this year.
+                    Until last year, conference information was published on the graduate school website, 
+                    but he received feedback that there were various inconveniences during the actual conference. 
+                    He received feedback that it is difficult to check the session information, 
+                    it is not easy to find the session location, and it is not easy to check the sudden session change.
+                    Based on this feedback, Paul decided to create a mobile conferencing app for this year's conference.
                 </ol>
             </h2>
         </div>
@@ -107,15 +107,19 @@
                 2. Do the following steps to identify the composing itmes of the pages of a mobile app from the given specication.
             </h1>
             <div class="identify__items__left_container">
-                <div class="identify__items__box">
+                <div class="identify__items__box" style="height: 470px;">
+                    <h3 class="lesson3__box_title">Schedule Page</h3>
                     <p class="lesson3__list_text">
-                        Read this sentence. Identify the composing items of the <strong>schedule</strong> page.</p>
-                    <p style="color: darkred;"><em>Event information: title, date, speaker, and location</em></p>
+                        Read the following sentences and identify the items that will make up the <strong>schedule</strong> page.
+                    <p style="color: darkred;"><strong>Event information: title, date, speaker, and location</strong></p>
                     <p class="lesson3__list_text" style="color: var(--color-black)">
-                        There will be multiple sessions, so we need a list.
-                        Each list contains title, date, speaker, and location.
-                        There are 3 days so that we need to move to different dates.
-                        Please fill in the rest of tables at the right side. 
+                        The conference will have several sessions, so a list is needed. 
+                        Each session includes a title, date, presenter, and location. 
+                        Also, since the conference is held for 3 days, it is necessary 
+                        to show the session information for 3 days on one screen, and 
+                        it is necessary to go back and forth between each date page. 
+                        The items that make up this page are organized in the table on the right. 
+                        Please fill in the remaining blanks in the table.
                     </p>
                 </div>
             </div>
@@ -143,19 +147,32 @@
                             <td>Display session title</td>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Schedule</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Schedule</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Schedule</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Schedule</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Schedule</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Schedule</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Schedule</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                     </tbody>
                 </table>
@@ -167,14 +184,15 @@
         <!-- Detailed Session Page -->
         <div class="identify__items__container">
             <div class="identify__items__left_container">
-                <div class="identify__items__box" style="height: 380px">
+                <div class="identify__items__box" style="height: 430px">
+                    <h3 class="lesson3__box_title">Detailed Session Page</h3>
                     <p class="lesson3__list_text">
-                        Read this sentence. Identify the composing items of the <strong>Detailed Session</strong> page.</p>
-                    <p style="color: darkred;"><em>Detailed Session: title, description, date, speaker, and location</em></p>
+                        Read the following sentences and identify the items that will make up the <strong>Detailed Session</strong> page.
+                    <p style="color: darkred;"><strong>Detailed Session: title, description, date, speaker, and location</strong></p>
                     <p class="lesson3__list_text" style="color: var(--color-black)">
-                        This page display all information about the clicked one session. 
-                        Each session contains title, speaker, date, location, detailed decription, and session image. 
-                        Please fill in the rest of tables at the right side. 
+                        This page displays all information about the session you clicked on.
+                        Each session includes a title, presenter, date, location, detailed description, and an image of the session.
+                        Complete the table on the right by organizing the items to be displayed on the detailed session page.
                     </p>
                 </div>
             </div>
@@ -206,6 +224,20 @@
                             <td>Session speaker</td>
                             <td>Display speaker's name</td>
                         </tr>
+                        <tr>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Detailed Session</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Detailed Session</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -216,17 +248,18 @@
         <!-- Speaker List Page -->
         <div class="identify__items__container">
             <div class="identify__items__left_container">
-                <div class="identify__items__box" style="height: 400px">
+                <div class="identify__items__box" style="height: 500px">
+                    <h3 class="lesson3__box_title">Speaker List Page</h3>
                     <p class="lesson3__list_text">
-                        Read this sentence. Identify the composing items of the <strong>Speaker List</strong> page.</p>
-                    <p style="color: darkred;"><em>Speaker information</em></p>
+                        Read the following sentences and identify the items that will make up the <strong>Speaker List</strong> page.
+                    <p style="color: darkred;"><strong>Speaker information</strong></p>
                     <p class="lesson3__list_text" style="color: var(--color-black)">
                         This sentence doesn't have enough information for this page. 
                         But, you can guess what you need to creat this page. 
-                        <br><i class="fas fa-hand-point-right"></i> There are multiple speakers.
-                        <br><i class="fas fa-hand-point-right"></i> Each speaker has same type of information: profile image, name, role, affiliation
-                        <br><i class="fas fa-hand-point-right"></i> Need to display the same type of object repeatedly -> List
-                        <br>Please fill in the rest of the table at the right side. 
+                        <br><i class="fas fa-star"></i> There are multiple speakers.
+                        <br><i class="fas fa-star"></i> Each presenter has the same type of information: profile image, name, role, affiliation, etc.
+                        <br><i class="fas fa-star"></i> Need to display the same type of object repeatedly -> List
+                        <br>Complete the table on the right by organizing the items to be displayed on the speaker list page.
                     </p>
                 </div>
             </div>
@@ -254,24 +287,32 @@
                             <td>Speakers' role (job title)</td>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Speaker List</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Speaker List</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Speaker List</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Speaker List</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Speaker List</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Speaker List</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Speaker List</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Speaker List</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                     </tbody>
                 </table>
@@ -283,17 +324,18 @@
         <!-- Location Map Page -->
         <div class="identify__items__container">
             <div class="identify__items__left_container">
-                <div class="identify__items__box" style="height: 360px">
+                <div class="identify__items__box" style="height: 450px">
+                    <h3 class="lesson3__box_title">Map Page</h3>
                     <p class="lesson3__list_text">
-                        Read this sentence. Identify the composing items of the <strong>Map</strong> page.</p>
-                    <p style="color: darkred;"><em>Map Information</em></p>
+                        Read the following sentences and identify the items that will make up the <strong>Map</strong> page.
+                    <p style="color: darkred;"><strong>Map Information</strong></p>
                     <p class="lesson3__list_text" style="color: var(--color-black)">
-                        A map of where the conference is held will be displayed. 
-                        However, not much information is included. 
-                        However, we can estimate what will be needed for this page.
-                        <br><i class="fas fa-hand-point-right"></i> Need a map with legend
-                        <br><i class="fas fa-hand-point-right"></i> Search bar at the top to search the session 
-                        <br><i class="fas fa-hand-point-right"></i> View map legend box
+                        A map is displayed showing where the meeting will be held.
+                        Other than that, no detailed information is provided. 
+                        However, you can anticipate what you need on this page:
+                        <br><i class="fas fa-star"></i> Need a map with legend
+                        <br><i class="fas fa-star"></i> Search bar at the top to search the session 
+                        <br><i class="fas fa-star"></i> View map legend box
                     </p>
                 </div>
             </div>
@@ -316,14 +358,25 @@
                             <td>Box to allow to enter the text for searching</td>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Map</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Map</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                         <tr>
-                            <th scope=“row” class=table_left>Map</th>
-                            <td></td>
-                            <td></td>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Map</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form class="tr" method="post" action="blah.html">
+                                <th scope=“row” class=table_left>Map</th>
+                                <td><input type="text"/></td>
+                                <td><input type="text"/></td>
+                            </form>
                         </tr>
                     </tbody>
                 </table>
@@ -336,16 +389,18 @@
     <!-- Schedule -->
     <div class="draw__items__container">
         <h1 class="directive_text">
-            3. Do the following steps to draw a mock-up according to the tables you made at step 2.
+            3. Follow these steps to create a mockup based on the table you created in step 2.
         </h1>
         <h3 class="lesson3__text">
-            Please place the items at the right phone image. 
-            Download this template and draw the items according to the tables you made at step 2. 
-            <strong>Download layout template </strong> 
+            Place the appropriate item on the provided cell phone image.
+            Download the provided template and sketch the items into the template according to the table created in step 2. 
+            The finished page layout is shown on the right.
+            <br><br><strong>Download layout template </strong> 
             <a href="https://drive.google.com/file/d/1SAIGZKviCCVn-uOVJiIo6ElBlfOOlvFK/view" class="submission__templage_a">
                 <i class="fas fa-download"></i></a>
         </h3>
         <div class="draw__items__left_container">
+            <h3 class="lesson3__box_title" style="margin: 10px 10px 0px 40px;">Schedule Page</h3>
             <table class="table" style="width:90%">
                 <tbody>
                     <tr>
@@ -369,19 +424,25 @@
                         <td>Display session title</td>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Schedule</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Schedule</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Schedule</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Schedule</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                 </tbody>
             </table>
@@ -396,6 +457,7 @@
     <!-- Detailed Session -->
     <div class="draw__items__container">
         <div class="draw__items__left_container">
+            <h3 class="lesson3__box_title" style="margin: 10px 10px 0px 40px;">Detailed Session Page</h3>
             <table class="table" style="width:90%">
                 <tbody>
                     <tr>
@@ -423,6 +485,20 @@
                         <td>Session speaker</td>
                         <td>Display speaker's name</td>
                     </tr>
+                    <tr>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Detailed Session</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Detailed Session</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -436,6 +512,7 @@
     <!-- Speaker List -->
     <div class="draw__items__container">
         <div class="draw__items__left_container">
+            <h3 class="lesson3__box_title" style="margin: 10px 10px 0px 40px;">Speaker List Page</h3>
             <table class="table" style="width:90%">
                 <tbody>
                     <tr>
@@ -459,24 +536,32 @@
                         <td>Speakers' role (job title)</td>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Speaker List</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Speaker List</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Speaker List</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Speaker List</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Speaker List</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                 </tbody>
             </table>
@@ -491,6 +576,7 @@
     <!-- Google Map -->
     <div class="draw__items__container">
         <div class="draw__items__left_container">
+            <h3 class="lesson3__box_title" style="margin: 10px 10px 0px 40px;">Map Page</h3>
             <table class="table" style="width:90%">
                 <tbody>
                     <tr>
@@ -509,14 +595,32 @@
                         <td>Box to allow to enter the text for searching</td>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Map</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Map</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                     <tr>
-                        <th scope=“row” class=table_left>Map</th>
-                        <td></td>
-                        <td></td>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Map</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Map</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form class="tr" method="post" action="blah.html">
+                            <th scope=“row” class=table_left>Map</th>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                        </form>
                     </tr>
                 </tbody>
             </table>
@@ -545,10 +649,10 @@
             <div class="design__transition__left_container">
                 <div class="design__transition__box">
                     <h2 class="lesson3__subtitle">Transition:
-                        <p><i class="fas fa-hand-point-right"></i> There are Schedule and Session Detail pages. </p> 
-                        <p><i class="fas fa-hand-point-right"></i> 
+                        <p><i class="fas fa-star"></i> There are Schedule and Session Detail pages. </p> 
+                        <p><i class="fas fa-star"></i> 
                         We can use <strong style="color: blue;">CLICK</strong> funtion to move to each other.</p> 
-                        <p><i class="fas fa-hand-point-right"></i>
+                        <p><i class="fas fa-star"></i>
                         When clicking the session item at session list, move to the detaild page. 
                         Conversely, when clicking the back icon at the detailed page, go back to the schedule page.
                         </p> 
@@ -566,11 +670,11 @@
             <div class="design__transition__left_container">
                 <div class="design__transition__box" style="height: 400px;">
                     <h2 class="lesson3__subtitle">Transition:
-                        <p><i class="fas fa-hand-point-right"></i> There are Schedule and Speaker List pages. </p> 
-                        <p><i class="fas fa-hand-point-right"></i> 
+                        <p><i class="fas fa-star"></i> There are Schedule and Speaker List pages. </p> 
+                        <p><i class="fas fa-star"></i> 
                         But, there is no item to connect to the speaker list at Schedule page. 
                         So, we need another item. We can use <strong style="color: blue;">TAB</strong> icon to move to each other.</p> 
-                        <p><i class="fas fa-hand-point-right"></i>
+                        <p><i class="fas fa-star"></i>
                         When clicking the Speakers icon at session list, move to the Speaker List page. 
                         Conversely, when clicking the back icon at the detailed page, go back to the schedule page.
                         </p> 
@@ -589,8 +693,8 @@
             5. Final Mock-up Design
         </h1>
         <h3 class="lesson3__text">
-            <Strong style="color: darkred;">Congratulations!</Strong>
-            <br>You finished designing a mobile conference app. 
+            <Strong style="color: darkred; font-size: var(--font-semi-medium);">Congratulations!</Strong>
+            <br><br>You finished designing a mobile conference app. 
             Please review the completed mock-up.
         </h3>
         <div>
@@ -624,6 +728,11 @@
             </div>
         </section>
     </footer>
+
+    <!-- arrow up -->
+    <button class="arrow-up" data-link="#lesson3">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     </body>
     </html>

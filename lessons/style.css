@@ -29,7 +29,7 @@
 
 .lessons__box {
   background: transparent;
-  width: 400px;
+  width: 30%;
   height: 450px;
   padding: 20px;
   border: 2px solid var(--color-grey);

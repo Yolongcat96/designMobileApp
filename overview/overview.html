@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="/imgs/logo_small-new.png">
     <link rel="stylesheet" href="/general_style.css">
     <link rel="stylesheet" href="/overview/style.css">
+    <script src="/overview/overview.js" defer></script>
     <script src="/main.js" defer></script>
     <title>SunEduTech</title>
 </head>
@@ -55,32 +56,33 @@
             <h1 class="overview__title">Overview</h1>
             <h2 class="overview__subtitle">About this course</h2>
             <p class="overview__text">
-                The course, <strong style="color:var(--color-green)">How to design a mobile app for education</strong>,
-                is designed for those who want to make a mobile app, but have no experience in technology. 
-                It takes around 1 hour to complete this course, and you will be supposed to complete 
-                all the provided lessons. This course is composed of the following three lessons and one assessment<br>
+                The <strong style="color:var(--color-green)">"How to design a mobile app for education"</strong> course is designed 
+                for people who want to create mobile apps but have no technical experience. 
+                This course takes about <strong>an hour</strong> to complete and requires you to complete all lessons provided. 
+                The course consists of 3 lessons and 1 assessment as follows:
+                <br>
             </p>
             <ul>
                 <li class="home__sub_listitem"><strong>Lesson 1</strong>: 
                     Mobile app definition and mobile app development process</li>
                 <li class="home__sub_listitem"><strong>Lesson 2</strong>: 
-                    Reviewing an mobile app</li>
+                    Mobile app review</li>
                 <li class="home__sub_listitem"><strong>Lesson 3</strong>: 
-                    (Practice) read the specification, identify the items, and draw the mock-up</li>
+                    Read specifications, identify items, and draw mockups.</li>
                 <li class="home__sub_listitem"><strong>Assessment</strong>: 
-                    Mobile App Design Project - Bike Safety Quiz App</li>
+                    Mobile app design project - Bike Safety Quiz App</li>
             </ul>
             <div>
                 <hr class="solid">
             </div>
             <p class="overview__text">
-                You will follow the following steps to learn how to design a mobile app. 
+                As you complete the following three steps in turn, 
+                you will broaden your understanding of mobile app design and experience the actual steps of designing an app. 
             </p>
             <ul>
-                <li class="home__sub_listitem"><strong>Step 1</strong>: Read the written instruction with images about the concepts.</li>
-                <li class="home__sub_listitem"><strong>Step 2</strong>: Watch the relevant videos to reinforce what you have learned.</li>
-                <li class="home__sub_listitem"><strong>Step 3</strong>: Take a quiz to check the degree of your understanding or 
-                    practice with acrual problems </li>
+                <li class="home__sub_listitem"><strong>Step 1</strong>: Read the explanation of the concept with the images presented.</li>
+                <li class="home__sub_listitem"><strong>Step 2</strong>: Watch related videos to reinforce what you have learned.</li>
+                <li class="home__sub_listitem"><strong>Step 3</strong>: Take the quiz and follow the provided exercises one by one.</li>
             </ul>
                 <img src="/imgs/overview.png" alt="overview" class="overview__main_img"/> <br> <br>
         </div>
@@ -89,11 +91,10 @@
     <section id="overview__bottom" class="section">
         <h2 class="overview__subtitle">Mobile App Design Project</h2>
         <p class="overview__text">
-            After successfully completing all the lessons, you are required to carry out a design project.
-            You are required to read the given specification of a mobile app and make a mock-up during 20 minutes. 
-            You can learn more about this project at 
-            <Strong><a href="/assessment/assessment.html" style="color: red;">Assessment</a></Strong>. 
-            <br>Please refer to the following for grading criteria.
+            After successful completion of all lessons, a design project should be undertaken. 
+            You should read the specified specifications of the mobile app and build a mockup in 20 minutes. 
+            You can learn more about this project in our <Strong><a href="/assessment/assessment.html" style="color: red;">Assessment</a></Strong>.
+            <br>Please refer to the table below for evaluation criteria.
         </p>
         <table class="overview__table">
             <tbody>
@@ -125,14 +126,20 @@
                     <td>The features of mobile devices are implemented, but they are not aligned with the purpose.</td>
                     <td>Any feature of mobile devices are not implemented.</td>
                 </tr>
+                <tr>
+                    <th scope=“row” class=overview__table_left>Description of transitions between pages</th>
+                    <td>The transitions between pages are well described.</td>
+                    <td>The transitions between pages are mostly described.</td>
+                    <td>The transitions between pages are partially described.</td>
+                    <td>The transitions between pages are never described.</td>
+                </tr>
             </tbody>
         </table>
         <div>
             <hr class="solid">
         </div>
         <p class="overview__text">
-            If you are still not sure about this course, 
-            please watch the following video to better understand a mobile app.    
+            If you are still not sure about this process, watch the following video to better understand the mobile app.   
         </p>
         <iframe class="overview__video"  src="https://www.youtube.com/embed/D5GrsDmxp1k" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -143,8 +150,8 @@
     <!-- Prev and Next direction -->
     <section id="overview__direction" class="section">
         <div class="overview__direction_top_container">
-            <h3 class="overview__direction_text">If you are ready, please click <strong>NEXT</strong> icon to start this course.</h3>
-                
+            <h3 class="overview__direction_text">
+                When you are ready, click the <strong>NEXT</strong> icon to begin this course.</h3>
         </div>
         <div class="overview__direction_bottom_container">
             <div class="overview__direction_left_container">
@@ -167,6 +174,11 @@
             </div>
         </section>
     </footer>
+
+    <!-- arrow up -->
+    <button class="arrow-up" data-link="#overview">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     </body>
     </html>

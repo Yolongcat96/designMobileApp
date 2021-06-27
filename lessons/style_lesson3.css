@@ -21,6 +21,14 @@
   margin-left: 0px;
 }
 
+.lesson3__box_title {
+  margin: 15px 15px 15px 0px;
+  color: var(--color-dark-black);
+  text-align: left;
+  font-weight: var(--weight-semi-bold);
+  font-size: var(--font-regular);
+}
+
 .directive_text {
   color: var(--color-dark-green);
   line-height: 1.5em;
@@ -124,7 +132,7 @@
 
 .draw__items__box {
   background-color: var(--color-white);
-  width: 100%;
+  width: 90%;
   height: 300px;
   padding: 20px;
   border: 1px solid var(--color-grey);
@@ -191,7 +199,7 @@
 
 .finalmockup__box {
   background-color: var(--color-white);
-  width: 100%;
+  width: 90%;
   height: 100px;
   padding: 20px;
   border: 1px solid var(--color-grey);
