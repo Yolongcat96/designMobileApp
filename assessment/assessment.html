@@ -217,15 +217,18 @@
                 When you're ready, click the submit button below to submit your project.
             </p>
 
-            <form action="mailto:sunseol@iu.edu" enctype="text/plain" onsubmit="beforeSubmit()">
-                <input name="Subject" id="Subject" type="text" value="" placeholder ="Subject Title" ><br/><br>
-                <input name="FirstName" id="FirstName" type="text" value="" placeholder ="First Name"><br /><br>
-                <input name="LastName" id="LastName" type="text" value="" placeholder ="Last Name"><br /><br>
+            <!-- <form action="mailto:sunseol@iu.edu" enctype="text/plain" onsubmit="beforeSubmit()" autocomplete="disabled" contenteditable="true">
+                <input contenteditable="true" name="Subject" id="Subject" type="text" value="" placeholder ="Subject Title" autocomplete="disabled"><br/><br>
+                <input contenteditable="true" name="FirstName" id="FirstName" type="text" value="" placeholder ="First Name" autocomplete="disabled"><br /><br>
+                <input contenteditable="true" name="LastName" id="LastName" type="text" value="" placeholder ="Last Name" autocomplete="disabled"><br /><br>
                 
                 <button name="Submit" id="submit" type="submit" value="Submit">Submit</button>
                 <button name="Reset" id="Reset" type="reset" value="Reset">Reset</button>
-                
-            </form>
+            </form> -->
+
+            <a class="contact_email_a" href="mailto:sunseol@iu.edu?subject=Final Project">
+                <button name="Submit" id="submit" type="submit" value="Submit">Submit</button>
+            </a>
 
         </div>
     </section>
